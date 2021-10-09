@@ -1,0 +1,181 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/pt-sans-regular.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #333333;
+    background-color: #FFFFFF;
+  } 
+  .page-header {
+    color: #000000;
+    background:  #FFFFFF;
+  }
+  .navigation-link {
+    font-family: "PT Sans ";
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase; 
+  }
+  .about {
+    background-image: url("images/background/index-background");
+    background-size: 458px 352px 
+  }
+
+  .sedona  {
+  line-height:36px; 
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+.cause {
+  line-height:36px; 
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+}
+  .features__title {
+  line-height: 28px; 
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+
+.advantages-item-true-town{
+   color: #FFFFFF;
+    background-color: #83B3D3;
+    background-image: url("images/background/background-real town.svg");
+    width: 400px;
+    height: 384px;
+    text-align: center;
+  }
+  
+  .lodging {
+    background-color: rgba(131, 179, 211, 0.12);
+    background-image: url("images/background/background.svg");
+    width: 400px;
+    height: 384px;
+    text-align: center;
+  }
+  .food {
+    color: #333333;
+    background-color: #FFFFFF;
+    background-image: url("images/background/background-white.svg");
+    width: 400px;
+    height: 384px;
+    text-align: center;
+  }
+
+  .souvenirs {
+    background-color: #83B3D31F;
+    background-image: url("images/background/background-white.svg");
+    width: 400px;
+    height: 384px;
+    text-align: center;
+  }
+
+  .advantages-item-bridge {
+    color: #FFFFFF;
+    background-color: #83B3D3;
+    background-image: url("images/background/background-bridge.svg");
+    width: 400px;
+    height: 384px;
+    text-align: center;
+  }
+  .advantages-item-square{
+    background-color: rgba(131, 179, 211, 0.12);
+    background-image: url("images/background/background.svg");
+    width: 400px;
+    height: 384px;
+    text-align: center;
+  }
+  .advantages-item-road{
+    background-color: rgba(131, 179, 211, 0.2);
+    background-image: url("images/background/background.svg");
+    width: 400px;
+    height: 384px;
+    text-align: center;
+  }
+  .advantages-item-tourists {
+    background-color: rgba(131, 179, 211, 0.12);
+    background-image: url("images/background/background.svg");
+    width: 400px;
+    height: 384px;
+    text-align: center;
+  }
+  
+  .interesting {
+    line-height: 36px; 
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+  }
+  .selection {
+    line-height:26px; 
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    
+  }
+  .button-search {
+    font-size: 20px; 
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: #FCFCFC;
+    background-color:#756257;
+    }
+    .subscription-description {
+      line-height:30px; 
+      font-size: 36px;
+      font-weight: 700;
+      text-align: center;
+      
+    }
+    .information {
+      color: #FFFFFF;
+      line-height:26px; 
+      font-size: 22px;
+      font-weight: 400;
+      text-align: center;
+     
+    }
+  .subscription-button {
+    font-size: 20px; 
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    color: #FCFCFC;
+    background-color:#83B3D3 ;
+    }
+ 
+.footer-contacts-address-phone {
+    font-weight: 400
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #000000;
+  }
