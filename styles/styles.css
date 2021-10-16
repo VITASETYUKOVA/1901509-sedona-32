@@ -2,7 +2,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("/fonts/pt-sans-regular.woff2") format("woff2");
+    src: url("/fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
   }
   
@@ -10,7 +10,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("/fonts/pt-sans-bold.woff2") format("woff2");
+    src: url("/fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
   }
   
@@ -22,10 +22,12 @@
     color: #333333;
     background-color: #FFFFFF;
   } 
+
   .page-header {
     color: #000000;
     background:  #FFFFFF;
   }
+
   .navigation-link {
     font-family: "PT Sans ";
     font-size: 20px;
@@ -37,11 +39,7 @@
     text-decoration: none;
     text-transform: uppercase; 
   }
-  .about {
-    background-image: url("images/background/index-background");
-    background-size: 458px 352px 
-  }
-
+  
   .sedona  {
   line-height:36px; 
   font-size: 30px;
@@ -49,13 +47,23 @@
   text-align: center;
   color: #000000;
 }
+
 .cause {
   line-height:36px; 
   font-size: 22px;
   font-weight: 400;
   text-align: center;
 }
-  .features__title {
+
+.advantages-item__title_town, advantages__title_bridge {
+  line-height: 28px; 
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+  .advantages-item__title {
   line-height: 28px; 
   font-size: 24px;
   font-weight: 700;
@@ -63,7 +71,7 @@
   color: #000000;
 }
 
-.advantages-item-true-town{
+.advantages-item-town{
    color: #FFFFFF;
     background-color: #83B3D3;
     background-image: url("images/background/background-real town.svg");
@@ -72,14 +80,15 @@
     text-align: center;
   }
   
-  .lodging {
+  .advantages-item-lodging {
     background-color: rgba(131, 179, 211, 0.12);
-    background-image: url("images/background/background.svg");
+    background-image: url("images/background/lodge_souvenirs_square_tourists.svg");
     width: 400px;
     height: 384px;
     text-align: center;
   }
-  .food {
+
+  .advantages-item-food {
     color: #333333;
     background-color: #FFFFFF;
     background-image: url("images/background/background-white.svg");
@@ -88,7 +97,7 @@
     text-align: center;
   }
 
-  .souvenirs {
+  .advantages-item-souvenirs {
     background-color: #83B3D31F;
     background-image: url("images/background/background-white.svg");
     width: 400px;
@@ -104,13 +113,15 @@
     height: 384px;
     text-align: center;
   }
+
   .advantages-item-square{
     background-color: rgba(131, 179, 211, 0.12);
-    background-image: url("images/background/background.svg");
+    background-image: url("images/background/lodge_souvenirs_square_tourists.svg");
     width: 400px;
     height: 384px;
     text-align: center;
   }
+
   .advantages-item-road{
     background-color: rgba(131, 179, 211, 0.2);
     background-image: url("images/background/background.svg");
@@ -118,6 +129,7 @@
     height: 384px;
     text-align: center;
   }
+
   .advantages-item-tourists {
     background-color: rgba(131, 179, 211, 0.12);
     background-image: url("images/background/background.svg");
@@ -126,13 +138,14 @@
     text-align: center;
   }
   
-  .interesting {
+  .booking {
     line-height: 36px; 
     font-size: 30px;
     font-weight: 700;
     text-align: center;
     color: #000000;
   }
+
   .selection {
     line-height:26px; 
     font-size: 22px;
@@ -146,8 +159,9 @@
     line-height: 36px;
     text-align: center;
     color: #FCFCFC;
-    background-color:#756257;
+    background-color:#83B3D3;
     }
+
     .subscription-description {
       line-height:30px; 
       font-size: 36px;
@@ -172,6 +186,15 @@
     background-color:#83B3D3 ;
     }
  
+    .subscription-button {
+      font-size: 20px; 
+      font-weight: 700;
+      line-height: 26px;
+      text-align: center;
+      color: #FCFCFC;
+      background-color:#83B3D3 ;
+      }
+
 .footer-contacts-address-phone {
     font-weight: 400
     font-size: 40px;
@@ -179,3 +202,61 @@
     text-transform: uppercase;
     color: #000000;
   }
+
+  .catalog-products {
+    background-image: url("images/background/catalog-background.jpg");
+    width: 1200px;
+    height: 408px;
+   }
+
+  .catalog-filter-title{
+    color: #FFFFFF;
+    line-height:26px; 
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    }
+
+  .control-label{
+    color: #FFFFFF;
+    line-height:24px; 
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    }
+
+  .product-card-title{
+    color: #000000;
+    line-height:31px; 
+    font-size: 24px;
+    font-weight: 700;
+    }
+
+  .Hotel-selection-service{
+    color: #FFFFFF;
+    line-height:78px; 
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+  .button-pagination-show-more {
+    font-size: 20px; 
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    color: #FCFCFC;
+    background-color:#83B3D3 ;
+    }
+ 

@@ -8,14 +8,6 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="navigation-logo" href="#"></a>
-      <img
-        class="logo"
-        src="images/icons/sedona.svg"
-        width="138"
-        height="70"
-        alt="Cедона."
-      />
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -28,6 +20,16 @@
             <a class="navigation-link" href="hotels.html"> Гостиницы </a>
           </li>
         </ul>
+        <div class="logo">
+          <a href="#">
+            <img
+              src="images/icons/sedona.svg"
+              width="138"
+              height="70"
+              alt="Cедона."
+            />
+          </a>
+        </div>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="">
@@ -63,11 +65,11 @@
       <h1 class="visually-hidden">Сервис по подбору отелей</h1>
       <section class="about">
         <img
-          class="welcome"
-          src="images/icons/welcome.svg"
-          width="458"
-          height="352"
-          alt="Добро пожаловать в  Седону."
+          class="photo"
+          src="images/photos/sedona.png"
+          width="1200"
+          height="485"
+          alt="Фото города Седона."
         />
         <div class="highlight">
           <h2 class="sedona">
@@ -80,8 +82,8 @@
       </section>
       <section class="advantages">
         <h3 class="visually-hidden">Преимущества</h3>
-        <div class="advantages-item-true-town">
-          <h2 class="features__title_">НАСТОЯЩИЙ ГОРОДОК</h2>
+        <div class="advantages-item-town">
+          <h3 class="advantages-item__title_town">НАСТОЯЩИЙ ГОРОДОК</h3>
           <p>№1</p>
           <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
@@ -91,78 +93,82 @@
             src="images/photos/photo-1.jpg"
             width="800"
             height="384"
-            alt="Фото города Седона."
+            alt="Фото отелей Седоны."
           />
         </div>
-        <div class="lodging">
+      </section>
+      <ul class="advantages-list">
+        <li class="advantages-item-lodging">
           <img
-            class="features__icon"
+            class="lodging__icon"
             src="images/icons/lodging.svg"
             width="75"
             height="72"
             alt="Жилье."
           />
-          <h2 class="features__title_">ЖИЛЬЕ</h2>
+          <h3 class="advantages-item-title">ЖИЛЬЕ</h3>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </div>
-        <div class="food">
+        </li>
+        <li class="advantages-item-food">
           <img
-            class="features__icon"
+            class="food__icon"
             src="images/icons/food.svg"
             width="74"
             height="70"
             alt="Еда."
           />
-          <h2 class="features__title">ЕДА</h2>
+          <h3 class="advantages-item-title">ЕДА</h3>
           <p>
             Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
           </p>
-        </div>
-        <div class="souvenirs">
+        </li>
+        <li class="advantages-item-souvenirs">
           <img
-            class="features__icon"
-            src="images/icons/souvenirs.svg"
-            width="64"
-            height="76"
-            alt="Сувениры."
+            class="souvenirs__icon"
+            src="images/icons/food.svg"
+            width="74"
+            height="70"
+            alt="Еда."
           />
-          <h2 class="features__title">СУВЕНИРЫ</h2>
+          <h3 class="advantages-item-title">СУВЕНИРЫ</h3>
           <p>Не только китайского, но и настоящего местного производства</p>
-        </div>
-        <div class="advantages-item-bridge">
-          <h2 class="features__title_">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
-          <p>№2</p>
-          <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-        </div>
+        </li>
+      </ul>
+      <section class="advantages-item-bridge">
+        <h2 class="advantages__title_bridge">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
+        <p>№2</p>
+        <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         <div class="photo-2">
           <img
             class="photo-2"
             src="images/photos/photo-2.jpg"
             width="800"
             height="384"
-            alt="Фото пейзажа Седона."
+            alt="Фото моста через горы в  Седоне."
           />
         </div>
-        <div class="advantages-item-square">
-          <h2 class="features__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+      </section>
+      <ul class="advantages-list">
+        <li class="advantages-item-square">
+          <h2 class="advantages-item-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
           <p>№3</p>
           <p>Все достопримечательности находятся очень близко</p>
-        </div>
+        </li>
 
-        <div class="advantages-item-road">
-          <h2 class="features__title">КРАСИВАЯ ДОРОГА</h2>
+        <li class="advantages-item-road">
+          <h2 class="advantages-item-title">КРАСИВАЯ ДОРОГА</h2>
           <p>№4</p>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
-        <div class="advantages-item-tourists">
-          <h2 class="features__title">МАЛО ТУРИСТОВ</h2>
+        </li>
+        <li class="advantages-item-tourists">
+          <h2 class="advantages-item-title">МАЛО ТУРИСТОВ</h2>
           <p>№5</p>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
-        </div>
+        </li>
+      </ul>
+      <section class="hotel search">
+        <h2 class="booking">Заинтересовались?</h2>
       </section>
-      <div class="hotel search">
-        <h2 class="interesting">Заинтересовались?</h2>
-      </div>
       <p class="selection">
         Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
         гостиниц в Седоне
