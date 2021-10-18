@@ -3,26 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <title>Седона</title>
-
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html"> Главная </a>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="catalog.html"> Главная </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">О Седоне</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">О Седоне</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html"> Гостиницы </a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html"> Гостиницы </a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="">
+      </nav>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu_link" href="">
               <span class="visually-hidden">Поиск</span>
               <img
                 class="icon-search"
@@ -33,8 +33,8 @@
               />
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+          <li class="menu__item">
+            <a class="menu_link" href="#">
               <span class="visually-hidden"> Избранное </span>
               <img
                 class="icon-to-favorites"
@@ -45,12 +45,11 @@
               />
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"> Хочу сюда </a>
+          <li class="menu__item">
+            <a class="menu_link" href="#"> Хочу сюда </a>
           </li>
         </ul>
-      </nav>
-      <section class="logo">
+        <section class="logo">
         <h2 class="visually-hidden">Логотип</h2>
         <a href="#">
           <img
@@ -62,8 +61,9 @@
         </a>
       </section>
     </header>
-    <main class="main-index">
-      <h1 class="visually-hidden">Сервис по подбору отелей</h1>
+    <main class="main-container main-index">
+      <div class="page-container">
+            <h1 class="visually-hidden">Сервис по подбору отелей</h1>
       <section class="about">
         <img
           class="photo"
@@ -85,7 +85,7 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <section class="advantages__container_ recitation">
           <div class="container__info">
-            <h3 class="container__title">Настоящий городок</h3>
+            <h3 class="container__title">НАСТОЯЩИЙ ГОРОДОК</h3>
             <p class="container__number">— №1 —</p>
             <p class="container__text">
               Седона — не аттракцион для туристов, там течёт своя жизнь
@@ -103,17 +103,17 @@
         </section>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--lodging">
-            <h3>Жильё</h3>
+            <h3 class="advantages__title">ЖИЛЬЕ</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="advatages__item advantages__item--food">
-            <h3>Еда</h3>
+            <h3 class="advantages__title">ЕДА</h3>
             <p>
               Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
           <li class="advantages__item advantages__item--souvenirs">
-            <h3>Сувениры</h3>
+            <h3 class="advantages__title">СУВЕНИРЫ</h3>
             <p>Не только китайского, но и настоящего местного производства</p>
           </li>
         </ul>
@@ -128,29 +128,29 @@
             />
           </div>
           <div class="container__info">
-            <h3>Там есть мост дьявола</h3>
+            <h3>ТАМ  ЕСТЬ МОСТ ДЬЯВОЛА</h3>
             <p>— №2 —</p>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </div>
         </section>
-      </section>
-      <ul class="advantages-list">
-        <li class="advatages__item advantages__item--square">
-          <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+        <ul class="advantages__list">
+        <li class="advantages__item advantages__item--square">
+          <h3 class="advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
           <p>— №3 —</p>
           <p>Все достопримечательности находятся очень близко</p>
         </li>
         <li class="advantages__item advantages__item--road">
-          <h3>КРАСИВАЯ ДОРОГА</h3>
+          <h3 class="advantages__title">КРАСИВАЯ ДОРОГА</h3>
           <p>— №4 —</p>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li class="advantages__item advantages__item--tourists">
-          <h3>МАЛО ТУРИСТОВ</h3>
+          <h3 class="advantages__title">МАЛО ТУРИСТОВ</h3>
           <p>— №5 —</p>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </li>
       </ul>
+    </section>
       <section class="hotel search">
         <h2 class="booking">Заинтересовались?</h2>
       </section>
@@ -158,9 +158,7 @@
         Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
         гостиниц в Седоне
       </p>
-      <button class="button-search" type="submit">
-        ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
-      </button>
+      <button class="selection_button_search" type="submit">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
       <section class="mailing">
         <h2 class="subscription-description">Подпишитесь на рассылку</h2>
         <p class="information">
@@ -181,7 +179,7 @@
             />
           </p>
           <button class="subscription-button" type="submit">Подписаться</button>
-        </form>
+        </form>      
       </section>
     </main>
     <footer class="footer">
@@ -233,7 +231,7 @@
         >
       </section>
       <section class="footer__copyright copyright">
-        <h2 class="visually-hidden">.html academy</h2>
+        <h2 class="visually-hidden">Логотип.html academy</h2>
         <a class="copyright__link" href="https://htmlacademy.ru">
           <img
             class="copyright__image"

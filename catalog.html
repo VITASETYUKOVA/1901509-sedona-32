@@ -7,48 +7,53 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html"> Главная </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html"> Гостиницы </a>
-          </li>
-        </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="">
-              <span class="visually-hidden">Поиск</span>
-              <img
-                class="icon-search"
-                src="images/icons/search.svg"
-                alt="Поиск."
-                width="18"
-                height="18"
-              />
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a
+              class="main-nav__link main-nav__link--active"
+              href="catalog.html"
+            >
+              Главная
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden"> Избранное </span>
-              <img
-                class="icon-to-favorites"
-                src="images/icons/to-favorites.svg"
-                alt="Избранное."
-                width="18"
-                height="17"
-              />
-            </a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">О Седоне</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"> Хочу сюда </a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html"> Гостиницы </a>
           </li>
         </ul>
       </nav>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu_link" href="">
+            <span class="visually-hidden">Поиск</span>
+            <img
+              class="icon-search"
+              src="images/icons/search.svg"
+              alt="Поиск."
+              width="18"
+              height="18"
+            />
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu_link" href="#">
+            <span class="visually-hidden"> Избранное </span>
+            <img
+              class="icon-to-favorites"
+              src="images/icons/to-favorites.svg"
+              alt="Избранное."
+              width="18"
+              height="17"
+            />
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu_link" href="#"> Хочу сюда </a>
+        </li>
+      </ul>
       <section class="logo">
         <h2 class="visually-hidden">Логотип</h2>
         <a href="#">
@@ -62,26 +67,29 @@
       </section>
     </header>
     <main class="main">
+      <h1 class="filters_name">Гостиницы Седоны</h1>
+      <ul class="main__breadcrumbs">
+        <li class="main__breadcrumbs--item">
+          <a class="main__breadcrumbs--breadcrumbs-link" href="index.html"
+            >Домашняя</a
+          >
+        </li>
+        <li class="main__breadcrumbs--item">
+          <a class="main__breadcrumbs--breadcrumbs-link">Вперед</a>
+          <span class="main__breadcrumbs--label">Гостиницы</span>
+        </li>
+      </ul>
       <section class="filters">
-        <h1 class="filters_name">Гостиницы Седоны</h1>
-        <ul class="main__breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Домашняя</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Вперед</a>
-            <span class="breadcrumbs-label">Гостиницы</span>
-          </li>
-        </ul>
+        <h2 class="visually-hidden">фильтры</h2>
         <form
           class="filters__form"
           action="https://echo.htmlacademy.ru/"
           method="get"
         >
-          <fieldset class="filters-catalog--group">
-            <legend class="filters-catalog--title">Инфаструктура</legend>
-            <ul class="filters-catalog--list">
-              <li class="filters-catalog--item">
+          <fieldset class="filter_catalog">
+            <legend class="filter_title">Инфаструктура:</legend>
+            <ul class="filter_list">
+              <li class="filter__item filter__item--infrastructure">
                 <label class="control">
                   <input
                     class="visually-hidden control-input"
@@ -92,7 +100,7 @@
                   <span class="control-label">Бассейн</span>
                 </label>
               </li>
-              <li class="filters-catalog-item">
+              <li class="filter__item filter__item--infrastructure">
                 <label class="control">
                   <input
                     class="visually-hidden control-input"
@@ -104,7 +112,7 @@
                   <span class="control-label">Парковка</span>
                 </label>
               </li>
-              <li class="filters-catalog--item">
+              <li class="filter__item filter__item--infrastructure">
                 <label class="control">
                   <input
                     class="visually-hidden control-input"
@@ -117,10 +125,10 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter--group">
-            <legend class="catalog-filter--title">Тип жилья:</legend>
-            <ul class="catalog-filter--list">
-              <li class="catalog-filter--item">
+          <fieldset class="filter_catalog">
+            <legend class="filter_title">Тип жилья:</legend>
+            <ul class="filter_list">
+              <li class="filter__item filter__item--type_of_lodging">
                 <label class="control">
                   <input
                     class="visually-hidden control-input"
@@ -133,7 +141,7 @@
                   <span class="control-label">Гостиница</span>
                 </label>
               </li>
-              <li class="catalog-filter-item">
+              <li class="filter__item filter__item--type_of_lodging">
                 <label class="control">
                   <input
                     class="visually-hidden control-input"
@@ -145,7 +153,7 @@
                   <span class="control-label">Мотель</span>
                 </label>
               </li>
-              <li class="catalog-filter-item">
+              <li class="filter__item filter__item--type_of_lodging">
                 <label class="control">
                   <input
                     class="visually-hidden control-input"
@@ -159,35 +167,27 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter--group">
-            <legend class="catalog-filter--title">Стоимость</legend>
+          <fieldset class="filter_catalog">
+            <legend class="filter_title">Стоимость</legend>
             <button class="range-toggle toggle-min" type="button">
               <span class="visually-hidden">Изменить минимальную цену.</span>
             </button>
             <button class="range-toggle toggle-max" type="button">
               <span class="visually-hidden">Изменить максимальную цену.</span>
             </button>
-            <label class="catalog-filter--label">
+            <label class="filter_label">
               от
-              <input
-                class="catalog-filter-input"
-                type="number"
-                name="min-price"
-              />
+              <input class="filter_input" type="number" name="min-price" />
               ₽
             </label>
-            <label class="catalog-filter-label">
+            <label class="filter_label">
               до
-              <input
-                class="catalog-filter-input"
-                type="number"
-                name="max-price"
-              />
+              <input class="filter_input" type="number" name="max-price" />
               ₽
             </label>
           </fieldset>
           <button class="button" type="submit">Применить</button>
-          <button class="button" type="submit">Сбросить</button>
+          <button class="button" type="reset">Сбросить</button>
         </form>
       </section>
       <details>
