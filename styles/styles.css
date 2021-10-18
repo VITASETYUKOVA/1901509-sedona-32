@@ -10,7 +10,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("/fonts/ptsans-700.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
   }
   
@@ -60,26 +60,32 @@
     padding: 0;
   }
 
+  .main-nav__link {
+    font-family: "PT Sans ";
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+  }
+
     .main-container {
     flex-grow: 1;
   }
 
-  .page-container {
-    width: 1200px;
-    margin: 0 auto;
-  }
-
-  .logo {
+    .logo {
     display: block;
     margin: 0 auto;
-  
   }
+  
   .advantages__list {
     display: flex;
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    text-align: center;   
+    text-align: center;
+    list-style-type: none; 
   }
 
   .sedona  {
@@ -116,7 +122,7 @@
   .container__info{
    color: #FFFFFF;
     background-color: #83B3D3;
-    background-image: url("images/background/background-real-town.svg");
+    background-image: url("../images/background/background-real-town.svg");
     width: 400px;
     height: 384px;
     text-align: center;
@@ -132,7 +138,7 @@
   
    .advantages__item--lodging {
     background-color: rgba(131, 179, 211, 0.12);
-    background-image: url("images/background/lodging.svg");
+    background-image: url("../images/background/lodging.svg");
     width: 400px;
     height: 384px;
     text-align: center;
@@ -141,7 +147,7 @@
   .advantages__item--food {
     color: #333333;
     background-color: #FFFFFF;
-    background-image: url("images/background/food.svg");
+    background-image: url("../images/background/food.svg");
     width: 400px;
     height: 384px;
     text-align: center;
@@ -149,7 +155,7 @@
 
   .advantages__item--souvenirs {
     background-color: #83B3D31F;
-    background-image: url("images/background/souvenirs.svg");
+    background-image: url("../images/background/souvenirs.svg");
     width: 400px;
     height: 384px;
     text-align: center;
@@ -157,7 +163,7 @@
   
   .advantages__item--square{
     background-color: rgba(131, 179, 211, 0.12);
-    background-image: url("images/background/square_tourists.svg");
+    background-image: url("../images/background/square_tourists.svg");
     width: 400px;
     height: 384px;
     text-align: center;
@@ -165,7 +171,7 @@
 
   .advantages__item--road{
     background-color: rgba(131, 179, 211, 0.2);
-    background-image: url("images/background/road.svg");
+    background-image: url("../images/background/road.svg");
     width: 400px;
     height: 384px;
     text-align: center;
@@ -173,7 +179,7 @@
 
   .advantages__item--tourists {
     background-color: rgba(131, 179, 211, 0.12);
-    background-image: url("images/background/square_tourists.svg");
+    background-image: url("../images/background/square_tourists.svg");
     width: 400px;
     height: 384px;
     text-align: center;
@@ -245,7 +251,7 @@
   }
     
   .filters {
-    background-image: url("images/background/catalog-background.jpg");
+    background-image: url("../images/background/catalog-background.jpg");
     width: 1200px;
     
   }
