@@ -26,17 +26,14 @@
             </li>
           </ul>
         </nav>
-        <section class="logo">
-          <h2 class="visually-hidden">Логотип</h2>
-          <a href="#">
-            <img
-              src="images/icons/sedona.svg"
-              width="138"
-              height="70"
-              alt="Cедона."
-            />
-          </a>
-        </section>
+        <a href="#">
+          <img
+            src="images/icons/sedona.svg"
+            width="138"
+            height="70"
+            alt="Cедона."
+          />
+        </a>
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu_link" href="">
@@ -68,29 +65,29 @@
         </ul>
       </div>
     </header>
-    <main class="main-container main-index">
-      <div class="page-container">
+    <main class="main">
+      <div class="page_container">
         <h1 class="visually-hidden">Сервис по подбору отелей</h1>
-        <section class="about">
+        <section class="features">
           <img
-            class="photo"
+            class="features_photo"
             src="images/photos/sedona.png"
             width="1200"
             height="485"
             alt="Фото города Седона."
           />
-          <div class="highlight">
-            <h2 class="sedona">
-              Седона — небольшой городок в Аризоне, заслуживающий большего!
+          <div class="features_highlight">
+            <h2 class="features_text">
+              СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
             </h2>
-            <p class="cause">
+            <p class="features_cause">
               Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
             </p>
           </div>
         </section>
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
-          <section class="advantages__container_ recitation">
+          <section class="advantages__container">
             <div class="container__info">
               <h3 class="container__title">НАСТОЯЩИЙ ГОРОДОК</h3>
               <p class="container__number">— №1 —</p>
@@ -159,28 +156,28 @@
             </li>
           </ul>
         </section>
-        <section class="hotel search">
-          <h2 class="booking">Заинтересовались?</h2>
+        <section class="hotel_search">
+          <h2 class="hotel_search_booking">Заинтересовались?</h2>
+          <p class="hotel_search_selection">
+            Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+            предложения гостиниц в Седоне
+          </p>
+          <button class="hotel_search__button_" type="submit">
+            ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
+          </button>
         </section>
-        <p class="selection">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-          предложения гостиниц в Седоне
-        </p>
-        <button class="selection_button_search" type="submit">
-          ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
-        </button>
         <section class="mailing">
           <h2 class="subscription-description">Подпишитесь на рассылку</h2>
           <p class="information">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form
-            class="subscription-form"
+            class="subscription_form"
             action="https://echo.htmlacademy.ru"
             method="post"
           >
-            <p class="appointment-form-email">
-              <label for="appointment-email"> Подписаться </label>
+            <p class="subscription_form-email">
+              <label for="subscription_title"> Подписаться </label>
               <input
                 type="text"
                 id="appointment-email"
@@ -188,7 +185,7 @@
                 placeholder="Ваш  e-mail"
               />
             </p>
-            <button class="subscription-button" type="submit">
+            <button class="subscription_button" type="submit">
               Подписаться
             </button>
           </form>

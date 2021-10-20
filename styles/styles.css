@@ -58,6 +58,7 @@
     width: 1200px;
     margin: 0;
     padding: 0;
+    list-style-type: none
   }
 
   .main-nav__link {
@@ -70,7 +71,7 @@
     text-decoration: none;
   }
 
-    .main-container {
+    .page_container {
     flex-grow: 1;
   }
 
@@ -79,6 +80,10 @@
     margin: 0 auto;
   }
   
+  .menu__item, .social__list, .main_info__item,.filter_list,.product-card,.pagination-item{
+    list-style-type: none;
+  }
+
   .advantages__list {
     display: flex;
     justify-content: space-between;
@@ -88,7 +93,7 @@
     list-style-type: none; 
   }
 
-  .sedona  {
+  .features_text {
   line-height:36px; 
   font-size: 30px;
   font-weight: 700;
@@ -96,7 +101,7 @@
   color: #000000;
   }
 
-  .cause {
+  .features_cause {
   line-height:36px; 
   font-size: 22px;
   font-weight: 400;
@@ -185,7 +190,7 @@
     text-align: center;
   }
   
-  .booking {
+  .hotel_search_booking {
     line-height: 36px; 
     font-size: 30px;
     font-weight: 700;
@@ -193,14 +198,14 @@
     color: #000000;
   }
 
-  .selection {
+  .hotel_search_selection {
     line-height:26px; 
     font-size: 22px;
     font-weight: 700;
     text-align: center;
   }
 
-  .selection_button_search {
+  .hotel_search__button_ {
     font-size: 20px; 
     font-weight: 700;
     line-height: 36px;
@@ -250,10 +255,25 @@
       color: #000000;
   }
     
-  .filters {
+    .main_info {
     background-image: url("../images/background/catalog-background.jpg");
     width: 1200px;
-    
+  }
+
+  .main_info_name{
+    color: #FFFFFF;
+    line-height:78px; 
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .main_info_nav__link{
+    color: #FFFFFF;
+    line-height:21px; 
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
   }
 
   .filter_title{
@@ -277,6 +297,14 @@
     line-height:31px; 
     font-size: 24px;
     font-weight: 700;
+  }
+
+  .main_info____nav--label{
+    color: #FFFFFF;
+    line-height:21px; 
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
   }
 
   .filters_name{
