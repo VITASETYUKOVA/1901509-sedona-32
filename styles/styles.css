@@ -36,8 +36,8 @@
     background:  #FFFFFF;
   }
 
-  .main-nav {
-    font-family: "PT Sans ";
+  .nav {
+    font-family: "PT Sans";
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
@@ -48,21 +48,21 @@
     text-transform: uppercase; 
   }
    
-    .main-nav {
+    .nav {
     display: flex;
     width: 1200px;
     margin: 0 auto;
   }
 
-  .main-nav__items {
+  .nav__item {
     width: 1200px;
     margin: 0;
     padding: 0;
     list-style-type: none
   }
 
-  .main-nav__link {
-    font-family: "PT Sans ";
+  .nav__link {
+    font-family: "PT Sans";
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
@@ -71,16 +71,16 @@
     text-decoration: none;
   }
 
-    .page_container {
+    .header-container {
     flex-grow: 1;
   }
 
-    .logo {
+    .logo__link {
     display: block;
     margin: 0 auto;
   }
   
-  .menu__item, .social__list, .main_info__item,.filter_list,.product-card,.pagination-item{
+  .menu__item, .social__list, .main__breadcrumbs--item,.filter__list,.hotels__item,.pagination__item{
     list-style-type: none;
   }
 
@@ -93,7 +93,7 @@
     list-style-type: none; 
   }
 
-  .features_text {
+  .features__text {
   line-height:36px; 
   font-size: 30px;
   font-weight: 700;
@@ -190,7 +190,7 @@
     text-align: center;
   }
   
-  .hotel_search_booking {
+  .booking__heading {
     line-height: 36px; 
     font-size: 30px;
     font-weight: 700;
@@ -198,14 +198,14 @@
     color: #000000;
   }
 
-  .hotel_search_selection {
+  .booking__paragraph {
     line-height:26px; 
     font-size: 22px;
     font-weight: 700;
     text-align: center;
   }
 
-  .hotel_search__button_ {
+  .booking__button {
     font-size: 20px; 
     font-weight: 700;
     line-height: 36px;
@@ -214,14 +214,14 @@
     background-color:#83B3D3;
   }
 
-  .subscription-description {
+  .mailing__heading {
       line-height:30px; 
       font-size: 36px;
       font-weight: 700;
       text-align: center;
   }
 
-  .information {
+  .mailing__paragraph {
       color: #FFFFFF;
       line-height:26px; 
       font-size: 22px;
@@ -229,7 +229,7 @@
       text-align: center;
   }
 
-  .subscription-button {
+  .mailing__button {
     font-size: 20px; 
     font-weight: 700;
     line-height: 26px;
@@ -238,16 +238,7 @@
     background-color:#83B3D3 ;
   }
  
-  .subscription-button {
-      font-size: 20px; 
-      font-weight: 700;
-      line-height: 26px;
-      text-align: center;
-      color: #FCFCFC;
-      background-color:#83B3D3 ;
-  }
-
-  .footer__contacts contacts {
+    .footer__contacts contacts {
       font-size: 40px; 
       font-weight: 400;
       line-height: 40px;
@@ -255,12 +246,12 @@
       color: #000000;
   }
     
-    .main_info {
+    .info+.filters{
     background-image: url("../images/background/catalog-background.jpg");
     width: 1200px;
   }
 
-  .main_info_name{
+  .info__heading{
     color: #FFFFFF;
     line-height:78px; 
     font-size: 60px;
@@ -268,7 +259,7 @@
     text-align: center;
   }
 
-  .main_info_nav__link{
+  .breadcrumbs__label{
     color: #FFFFFF;
     line-height:21px; 
     font-size: 16px;
@@ -276,7 +267,7 @@
     text-align: center;
   }
 
-  .filter_title{
+  .filter__title{
     color: #FFFFFF;
     line-height:26px; 
     font-size: 20px;
@@ -284,22 +275,14 @@
     text-align: center;
   }
 
-  .control-label{
-    color: #FFFFFF;
-    line-height:24px; 
-    font-size: 18px;
-    font-weight: 400;
-    text-align: center;
-  }
-
-  .product-card-title{
+  .hotels__title{
     color: #000000;
     line-height:31px; 
     font-size: 24px;
     font-weight: 700;
   }
 
-  .main_info____nav--label{
+  .breadcrumbs__label{
     color: #FFFFFF;
     line-height:21px; 
     font-size: 16px;
@@ -307,7 +290,15 @@
     text-align: center;
   }
 
-  .filters_name{
+  .control__label{
+    color: #FFFFFF;
+    line-height:24px; 
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .info__heading{
     color: #FFFFFF;
     line-height:78px; 
     font-size: 60px;
@@ -315,7 +306,7 @@
     text-align: center;
   }
  
-  .button-pagination-show-more {
+  .pagination__button {
     font-size: 20px; 
     font-weight: 700;
     line-height: 26px;
