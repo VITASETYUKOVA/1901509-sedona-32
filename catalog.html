@@ -11,7 +11,7 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link nav__link--active" href="catalog.html"
+              <a class="nav__link nav__link--active" href="index.html"
                 >Главная
               </a>
             </li>
@@ -189,34 +189,39 @@
         </form>
       </section>
       <section class="sorting">
-        <h2 class="sorting__heading">Сортировка</h2>
+        <h2 class="visually-hidden sorting__heading">Сортировка</h2>
         <p class="sorting__counter">
           Найдено гостиниц: <span class="sorting__number">38</span>
         </p>
-      </section>
-      <section class="user">
-        <h2 class="visually-hidden">юзерпик</h2>
         <details>
           <summary>
             <span class="visually-hidden">Сортировка</span>
             <span>Сначала дешевле</span>
           </summary>
-          <a href="user__link__link__iuser--cheap">Сначала дешевле</a><br />
-          <a href="user__link__link_user--expensive">Сначала дорогое</a><br />
-          <a href="user__link__link_user--popular">Сначала популярное</a><br />
+          <ul class="sorting__list">
+            <li class="sorting__item">
+              <a href="sorting__link__link__sorting--сheap">Сначала дешевле</a>
+              <a href="sorting__link__link__sorting--expensive"
+                >Сначала дорогое</a
+              >
+              <a href="sorting__link__link__sorting--popular"
+                >Сначала популярное</a
+              >
+            </li>
+          </ul>
         </details>
-      </section>
-      <section class="sorting__view veiw">
-        <h2 class="visually-hidden">Cортировка</h2>
-        <button class="view__button view__button--grid">
-          <span class="visually-hidden">Показать товары сеткой</span>
-        </button>
-        <button class="view__button view__button--column">
-          <span class="visually-hidden">Показать товары плиткой</span>
-        </button>
-        <button class="view__button view__button--list view__button--active">
-          <span class="visually-hidden">Показать содержимое</span>
-        </button>
+        <section class="sorting__view view">
+          <h2 class="visually-hidden">Cортировка</h2>
+          <button class="view__button view__button--grid">
+            <span class="visually-hidden">Показать товары сеткой</span>
+          </button>
+          <button class="view__button view__button--column">
+            <span class="visually-hidden">Показать товары плиткой</span>
+          </button>
+          <button class="view__button view__button--list view__button--active">
+            <span class="visually-hidden">Показать содержимое</span>
+          </button>
+        </section>
       </section>
       <section class="hotels">
         <ul class="hotels__list">
@@ -353,7 +358,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Твиттер</span>
               <img
-                class="social__icon social--twitter"
+                class="social__icon social__icon--twitter"
                 src="images/icons/twitter.svg"
                 alt="иконка Фейсбук."
                 width="18"
@@ -365,7 +370,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Фейсбук</span>
               <img
-                class="social__icon social--facebook"
+                class="social__icon social__icon--facebook"
                 src="images/icons/facebook.svg"
                 alt="иконка Фейсбук."
                 width="10"
@@ -377,7 +382,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Ютуб</span>
               <img
-                class="social__icon social--youtube"
+                class="social__icon social__icon--youtube"
                 src="images/icons/youtube.svg"
                 alt="иконка Фейсбук."
                 width="20"

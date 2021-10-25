@@ -80,7 +80,7 @@
     margin: 0 auto;
   }
   
-  .menu__item, .social__list, .breadcrumbs__item, .filter__list,.hotels__item,.pagination__item{
+  .menu__item, .social__list, .breadcrumbs__item, .filter__list,.hotels__item,.pagination__item,.sorting__item{
     list-style-type: none;
   }
 
