@@ -11,7 +11,7 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link nav__link--active" href="index.html"
+              <a class="nav__link nav__link--active" href="catalog.html"
                 >Главная
               </a>
             </li>
@@ -23,7 +23,7 @@
             </li>
           </ul>
         </nav>
-        <a class="logo__link" href="#">
+          <a class="logo__link" href="#">
           <img
             src="images/icons/sedona.svg"
             width="138"
@@ -31,8 +31,7 @@
             alt="Cедона."
           />
         </a>
-        <section class="menu">
-          <h2 class="visually-hidden">меню</h2>
+        
           <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__link" href="#">
@@ -59,11 +58,11 @@
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#"> Хочу сюда </a>
+              <a class="menu__linkh" href="#"> Хочу сюда </a>
             </li>
           </ul>
-        </section>
-      </div>
+        
+              </div>
     </header>
     <main class="main">
       <div class="main__container">
@@ -75,7 +74,7 @@
               <a class="breadcrumbs__link" href="index.html">Домашняя</a>
             </li>
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link">Вперед</a>
+              <a class="visually-hidden">Вперед</a>
               <span class="breadcrumbs__label">Гостиницы</span>
             </li>
           </ul>
@@ -188,6 +187,7 @@
           <button class="filter__submit button" type="submit">Применить</button>
           <button class="filter__reset button" type="reset">Сбросить</button>
         </form>
+      
       </section>
       <section class="sorting">
         <h2 class="visually-hidden sorting__heading">Сортировка</h2>
@@ -294,19 +294,15 @@
             <a href="#" class="hotels__button__button--chosen">В ИЗБРАННОЕ</a>
           </li>
         </ul>
+        <button class="hotels__button" type="submit">ЗАГРУЗИТЬ ЕЩЕ</button>
       </section>
       <section class="pagination">
+        <div class="pagination__container">
         <h2 class="visually-hidden">пагинация</h2>
-        <button class="pagination__button" type="submit">ЗАГРУЗИТЬ ЕЩЕ</button>
-        <ul class="pagination__list">
-          <li class="pagination__item">
-            <a class="pagination__link">
-              <span class="visually-hidden">Предыдущая страница</span>
-            </a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link__pagination--current">1</a>
-          </li>
+                <ul class="pagination__list">
+                   <li class="pagination__item">
+            <a class="pagination__link__pagination--current" href="#">1</a>
+            </li>
           <li class="pagination__item">
             <a class="pagination__link" href="#">2</a>
           </li>
@@ -328,6 +324,7 @@
             </a>
           </li>
         </ul>
+      </div>
       </section>
       <section class="mailing">
         <h2 class="mailing__heading">Подпишитесь на рассылку</h2>
@@ -355,6 +352,7 @@
       </section>
     </main>
     <footer class="footer">
+      <div class="footer__container">
       <section class="footer__social social">
         <h2 class="visually-hidden">мы в социальных сетях</h2>
         <ul class="social__list">
@@ -362,7 +360,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Твиттер</span>
               <img
-                class="social__icon social__icon--twitter"
+                class="social__icon social--twitter"
                 src="images/icons/twitter.svg"
                 alt="иконка Фейсбук."
                 width="18"
@@ -374,7 +372,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Фейсбук</span>
               <img
-                class="social__icon social__icon--facebook"
+                class="social__icon social--facebook"
                 src="images/icons/facebook.svg"
                 alt="иконка Фейсбук."
                 width="10"
@@ -386,7 +384,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Ютуб</span>
               <img
-                class="social__icon social__icon--youtube"
+                class="social__icon social--youtube"
                 src="images/icons/youtube.svg"
                 alt="иконка Фейсбук."
                 width="20"
@@ -412,6 +410,7 @@
           />
         </a>
       </section>
+    </div>
     </footer>
   </body>
 </html>
