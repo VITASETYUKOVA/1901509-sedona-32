@@ -110,12 +110,14 @@ body {
 }
 
 .logo__link {
+  padding-bottom: 0;
   width: 138px;
   text-align: center;
   justify-content: center;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  top: 0;
+  transform: translate(-50%);
 }
 
 .menu__linkh {
@@ -134,12 +136,6 @@ body {
   background-clip: padding-box;
   padding: 9px 10px;
   min-height: 18px;
-}
-
-.menu__item {
-  align-items: center;
-  padding-top: 13px;
-  padding-left: 12px;
 }
 
 .menu__item {
@@ -245,6 +241,10 @@ body {
   font-weight: 700;
   text-align: center;
   color: #ffffff;
+}
+
+.advantages__container {
+  display: flex;
 }
 
 .advantages__item--lodging {
@@ -398,6 +398,8 @@ body {
 }
 
 .mailing__button {
+  display: inline-block;
+
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
