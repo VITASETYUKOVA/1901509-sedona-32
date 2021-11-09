@@ -39,8 +39,9 @@ body {
 
 .header__container {
   display: flex;
+  box-sizing: border-box;
   width: 1200px;
-  padding: 14px 71px 14px 71px;
+  padding: 0 71px;
   margin: 0 auto;
   position: relative;
   justify-content: space-between;
@@ -89,24 +90,46 @@ body {
 }
 
 .menu__link {
-  padding: 24px 23px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  position: relative;
+}
+
+.menu__icon menu__icon--search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu__icon menu__icon--favorites {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .menu__list {
   display: flex;
   padding: 0;
+  margin: 0;
 }
 
 .logo__link {
+  padding-bottom: 0;
   width: 138px;
   text-align: center;
   justify-content: center;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  top: 0;
+  transform: translate(-50%);
 }
 
 .menu__linkh {
+  display: inline-block;
+  box-sizing: border-box;
   font-family: "PT Sans";
   text-decoration: none;
   text-transform: uppercase;
@@ -120,7 +143,7 @@ body {
   border-radius: 4px;
   background-clip: padding-box;
   padding: 9px 10px;
-  min-height: 18px;
+  min-height: 37px;
 }
 
 .menu__item,
@@ -211,14 +234,8 @@ body {
 }
 
 .advantages__container {
-  display:flex;
- 
+  display: flex;
 }
-
-
-
-
-
 
 .advantages__item--lodging {
   background-color: rgba(131, 179, 211, 0.12);
@@ -357,6 +374,8 @@ body {
 }
 
 .mailing__input {
+  display: inline-block;
+
   font-family: "PT Sans";
   text-decoration: none;
   font-size: 18px;
@@ -371,6 +390,8 @@ body {
 }
 
 .mailing__button {
+  display: inline-block;
+
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
