@@ -92,7 +92,7 @@ body {
 .menu__link {
   display: inline-block;
   width: 38px;
-  width: 38px;
+  min-height: 38px;
   position: relative;
 }
 
@@ -136,19 +136,16 @@ body {
   background-clip: padding-box;
   padding: 9px 10px;
   min-height: 18px;
+  margin-left: 10px;
 }
 
 .menu__item {
-  align-items: center;
-  padding-top: 13px;
-  padding-left: 12px;
+  margin-right: 23px;
 }
 
-.menu__itemkh {
+.menu {
+  display: flex;
   align-items: center;
-  padding-top: 13px;
-  padding-left: 12px;
-  margin-left: 23px;
 }
 
 .menu__item,
@@ -203,7 +200,7 @@ body {
 
 .advantages__list {
   display: flex;
-  justify-content: space-between;
+
   margin: 0;
   padding: 0;
   text-align: center;
@@ -224,15 +221,37 @@ body {
   font-weight: 700;
   text-align: center;
   color: #000000;
+
+  margin: 99px 0 20px 0;
+}
+
+.advantages__title.next {
+  margin: 0 0 25px 0;
+}
+.advantages__paragraph {
+  margin: 0;
+  max-width: 250px;
+}
+
+.container__text {
+  max-width: 220px;
+  width: 100%;
+  margin: 0;
+}
+
+.container__textkh {
+  max-width: 250px;
+  width: 100%;
+  margin: 0;
 }
 
 .container__info {
   color: #ffffff;
   background-color: #83b3d3;
   background-image: url("../images/background/background-real-town.svg");
-  width: 400px;
-  height: 384px;
+  max-width: 400px;
   text-align: center;
+  padding: 96px 90px 75px 90px;
 }
 
 .container__title {
@@ -241,6 +260,13 @@ body {
   font-weight: 700;
   text-align: center;
   color: #ffffff;
+  margin: 0 0 25px 0;
+}
+
+.container__number {
+  margin: 0 0 26px 0;
+
+  text-align: center;
 }
 
 .advantages__container {
@@ -250,49 +276,51 @@ body {
 .advantages__item--lodging {
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url("../images/background/lodging.svg");
-  width: 400px;
-  height: 384px;
+  max-width: 400px;
+
   text-align: center;
+  padding: 85px 75px 79px 75px;
 }
 
 .advantages__item--food {
   color: #333333;
   background-color: #ffffff;
   background-image: url("../images/background/food.svg");
-  width: 400px;
-  height: 384px;
+  max-width: 400px;
+  padding: 85px 75px 79px 75px;
   text-align: center;
 }
 
 .advantages__item--souvenirs {
   background-color: #83b3d31f;
   background-image: url("../images/background/souvenirs.svg");
-  width: 400px;
-  height: 384px;
+  max-width: 400px;
   text-align: center;
+  padding: 85px 75px 79px 75px;
 }
 
 .advantages__item--square {
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url("../images/background/square_tourists.svg");
-  width: 400px;
-  height: 384px;
+  max-width: 400px;
+  padding: 98px 75px 77px 75px;
   text-align: center;
 }
 
 .advantages__item--road {
   background-color: rgba(131, 179, 211, 0.2);
   background-image: url("../images/background/road.svg");
-  width: 400px;
-  height: 384px;
+  max-width: 400px;
+
   text-align: center;
+  padding: 98px 75px 77px 75px;
 }
 
 .advantages__item--tourists {
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url("../images/background/square_tourists.svg");
-  width: 400px;
-  height: 384px;
+  max-width: 400px;
+  padding: 98px 75px 77px 75px;
   text-align: center;
 }
 
@@ -425,7 +453,8 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
-  justify-content: space-between;
+  align-items: center;
+  padding: 40px 72px 30px 72px;
 }
 
 .footer__social social {
@@ -449,8 +478,8 @@ body {
   background-color: #ffffff;
 }
 
-.footer__social social {
-  margin-right: 72px;
+.footer__social {
+  margin-right: 61px;
 }
 
 .social__list {
@@ -458,11 +487,16 @@ body {
   padding: 0;
   display: flex;
   list-style-type: none;
-  max-width: 112px;
+  width: 100%;
 }
 
 .social__item {
   margin-left: 29px;
+}
+
+.footer__contacts contacts {
+  max-width: 720px;
+  margin-right: 50px;
 }
 
 .contacts__phone {
@@ -667,7 +701,7 @@ body {
   border-radius: 4px;
   background-clip: padding-box;
   padding: 21px 21px;
-  margin-top: 31px;
+  margin-bottom: 61px;
   margin-left: 287px;
 }
 
