@@ -227,6 +227,7 @@
         </section>
       </section>
       <section class="hotels">
+        <div class="wrapper">
         <ul class="hotels__list">
           <li class="hotels__item">
             <a class="hotels__link" href="#"
@@ -245,7 +246,10 @@
             <p><span class="hotels__price"></span>От 4000 ₽</p>
             <a href="#" class="hotels__button__button--thorough">ПОДРОБНЕЕ</a>
             <a href="#" class="hotels__button__button--chosen">В ИЗБРАННОЕ</a>
-          </li>
+            <div class="hotels__rating__rating--four">
+              <p class="hotels__stars">Рейтинг: 8,5</p>
+            </div>
+         </li>
           <li class="hotels__item">
             <a class="hotels__link" href="#">
               <img
@@ -260,6 +264,10 @@
             <p><span class="hotels__price"></span>От 3000 ₽</p>
             <a href="#" class="hotels__button__button--thorough">ПОДРОБНЕЕ</a>
             <a href="#" class="hotels__button__button--chosen">В ИЗБРАННОЕ</a>
+            <div class="hotels__rating__rating--three">
+              <p class="hotels__stars">Рейтинг: 8,9</p>
+              
+            </div>
           </li>
           <li class="hotels__item">
             <a class="hotels__link" href="#">
@@ -277,7 +285,10 @@
             <p><span class="hotels__price"></span>От 2000 ₽</p>
             <a href="#" class="hotels__button__button--thorough">ПОДРОБНЕЕ</a>
             <a href="#" class="hotels__button__button--chosen">В ИЗБРАННОЕ</a>
-          </li>
+            <div class="hotels__rating__rating--two">
+              <p class="hotels__stars">Рейтинг: 9,2</p>
+            </div>
+      </li>
           <li class="hotels__item">
             <a href="#">
               <img
@@ -292,9 +303,13 @@
             <p><span class="hotels__price"></span>От 3000 ₽</p>
             <a href="#" class="hotels__button__button--thorough">ПОДРОБНЕЕ</a>
             <a href="#" class="hotels__button__button--chosen">В ИЗБРАННОЕ</a>
-          </li>
-        </ul>
+            <div class="hotels__rating__rating--two">
+              <p class="hotels__stars">Рейтинг: 9,2</p>
+            </div>
+     </li>
+      </ul>
         <button class="hotels__button" type="submit">ЗАГРУЗИТЬ ЕЩЕ</button>
+      </div>
       </section>
       <section class="pagination">
         <div class="pagination__container">
@@ -333,15 +348,15 @@
         </p>
          <div class="adressing__form">
           <form
-            class="adressing__container"
+            class="adressing_container"
             action="https://echo.htmlacademy.ru"
             method="post"
           >
             <input
               class="adressing__input"
               type="text"
-              id="adressing_lable"
-              name="adressing__lable"
+              id="adressing__lable"
+              name="adressing_lable"
               placeholder="Ваш  e-mail"
             /><button class="adressing__button" type="submit">
               Подписаться
