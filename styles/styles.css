@@ -694,14 +694,17 @@ body {
 }
 
 .hotels__list {
-  display: grid;
-  grid-template-rows: 181px 181px 181px 181px 116px;
-  grid-template-columns: 180px 36px 151px 8px 160px 361px 160px;
   width: 1056px;
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   margin-bottom: 42px;
+}
+
+.hotels__item {
+  display: grid;
+  grid-template-rows: 28px 31px 55px 67px;
+  grid-template-columns: min-content(180px 36px 151px 8px 160px 361px 160px);
 }
 
 .hotels__photo {
@@ -711,24 +714,50 @@ body {
 }
 
 .hotels__title {
-  grid-row: 1 / 5;
-  grid-column: 3 / 5;
+  font-family: "PT Sans";
+  text-decoration: none;
+  color: #000000;
+  line-height: 26px;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  grid-row: 2 / 3;
+  grid-column: 3 / 6;
+  justify-self: start;
+  grid-template-columns: min-content;
 }
 
 .hotels__type {
-  grid-row: 1 / 5;
-  grid-column: 3;
+  font-family: "PT Sans";
+  text-decoration: none;
+  color: #333333;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
 }
 
 .hotels__price {
-  grid-row: 1 / 5;
-  grid-column: 5;
+font-family: "PT Sans";
+  text-decoration: none;
+  color: #333333;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+ grid-row: 3 / 4;
+  grid-column: 5 / 6;
 }
 
 .hotels__button__button--thorough {
-  grid-row: 1 / 5;
+  grid-row: 4 / 5;
   grid-column: 3 / 4;
-  width: 151px;
+  justify-self: start;
   font-family: "PT Sans";
   text-decoration: none;
   font-size: 16px;
@@ -748,8 +777,9 @@ body {
 }
 
 .hotels__button__button--chosen {
-  grid-row: 1 / 5;
+  grid-row: 4 / 5;
   grid-column: 5 / 6;
+  justify-self: start;
   width: 160 px;
   font-family: "PT Sans";
   text-decoration: none;
@@ -768,9 +798,9 @@ body {
 }
 
 .hotels__rating {
-  grid-row: 1 / 5;
-  grid-column: 7 / 8;
-  height: 17px;
+  grid-row: 4 / 5;
+  grid-column: 7 / 86;
+  min-height: 17px;
   background-color: white;
   background-image: url("../images/background/star.svg");
   background-repeat: repeat-x;
@@ -788,8 +818,6 @@ body {
 }
 
 .hotels__button {
-  grid-row: 5 / 6;
-  grid-column: 1 / 6;
   font-family: "PT Sans";
   text-decoration: none;
   font-size: 20px;
