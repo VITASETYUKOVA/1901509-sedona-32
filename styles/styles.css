@@ -323,7 +323,6 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
   background-image: url("../images/background/road.svg");
   max-width: 400px;
-
   text-align: center;
   padding: 98px 75px 77px 75px;
 }
@@ -401,7 +400,6 @@ body {
   line-height: 36px;
   font-size: 30px;
   font-weight: 700;
-
   margin: 0;
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -482,7 +480,6 @@ body {
 
 .social__list {
   display: flex;
-
   text-align: right;
   margin: 0;
   padding: 0;
@@ -622,7 +619,6 @@ body {
   line-height: 36px;
   font-size: 30px;
   font-weight: 700;
-
   margin: 0;
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -711,21 +707,22 @@ body {
 
 .hotels__item {
   display: flex;
-  padding: 30px 0 30px 0;
+  padding: 30px 0 0 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotels__photo {
+  display: block;
 }
 
 .hotels__inner {
- margin: 0;
-padding: 0 0 0 36px; 
-
-
+  margin: 0;
+  padding: 0 0 0 36px;
 }
 .hotels__paragraph {
   margin: 0;
-   padding: 0;
- }
-
-
+  padding: 0;
+}
 
 .hotels__title {
   font-family: "PT Sans";
@@ -758,7 +755,6 @@ padding: 0 0 0 36px;
   font-weight: 400;
   margin: 0 100px 0 0;
   padding: 0;
-  
 }
 
 .hotels__typekhk {
@@ -770,14 +766,7 @@ padding: 0 0 0 36px;
   font-weight: 400;
   margin: 0 52px 0 0;
   padding: 0;
-  
 }
-
-
-
-
-
-
 
 .hotels__price {
   font-family: "PT Sans";
@@ -849,30 +838,19 @@ padding: 0 0 0 36px;
 
 .hotels__rating {
   margin-left: auto;
-  
-  padding: 90px 0 0 0;
-  
+
+  text-align: center;
 }
 
 .hotels__stars > span {
-  display: flex;
-  max-height: 17px;
-  color:#83B3D3 ;
-    display: inline-block;
-        width: 18px;
-    margin: 0;
-    padding: 0;
+  color: #83b3d3;
+  display: inline-block;
+  width: 18px;
+  margin: 0;
+  padding: 0;
 }
 
-
-
-
-
-
-
-
 .hotels__linklevel {
-  
   box-sizing: border-box;
   text-align: center;
   font-family: "PT Sans";
@@ -881,12 +859,12 @@ padding: 0 0 0 36px;
   font-size: 16px;
   font-weight: 700;
   line-height: 21px;
-    color: #333333;
+  color: #333333;
   background-color: #f2f2f2;
   width: 160px;
   border-radius: 4px;
-  padding: 9px 33px 10px 33px;
- margin-right: 0;
+  padding: 9px 31px 10px 31px;
+  margin: 63px 0 30px 0;
 }
 
 .hotels__button {
@@ -909,7 +887,7 @@ padding: 0 0 0 36px;
 
 .hotels__link {
   text-decoration: none;
-    padding: 0;
+  padding: 0;
   margin: 0;
 }
 
