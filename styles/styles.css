@@ -126,6 +126,7 @@ body {
   left: 50%;
   top: 0;
   transform: translate(-50%);
+  z-index: 1;
 }
 
 .menu__linkh {
@@ -167,6 +168,33 @@ body {
   list-style-type: none;
 }
 
+.round-green {
+  color: #ffffff;
+  display: block;
+  width: 19px;
+  height: 19px;
+  font-size: 10px;
+  line-height: 13px;
+  padding-top: 2px;
+  box-sizing: border-box;
+  padding-left: 4px;
+  background-color: #7db54f;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  right: -4px;
+  z-index: 1;
+}
+
+
+.nav__link--active {
+  text-decoration: underline;
+  text-decoration: solid;
+  text-decoration-color: #756257;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 25px;
+}
+
 .advantages__container {
   display: flex;
 }
@@ -185,6 +213,19 @@ body {
   background-size: cover;
   width: 1200px;
   height: 485px;
+  position: relative;
+}
+
+.features__greetings::after {
+  width: 100%;
+  height: 57px;
+  content: "";
+  background: url("../images/background/collar.svg") no-repeat center center;
+  display: block;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  position: absolute;
 }
 
 .features__text {
@@ -229,7 +270,6 @@ body {
   font-weight: 700;
   text-align: center;
   color: #000000;
-
   margin: 0 0 20px 0;
 }
 
@@ -273,7 +313,6 @@ body {
 
 .container__number {
   margin: 0 0 26px 0;
-
   text-align: center;
 }
 
@@ -382,6 +421,34 @@ body {
   transform: translate(-50%, 0);
 }
 
+.placeholder:hover {
+  color: #e5e5e5;
+}
+
+.placeholder:focus {
+  box-shadow: 0 0 0 3px #83b3d3;
+}
+.input[type="text"]:placeholder__shown:active {
+  border: 2px solid #000000;
+}
+
+.input.ng-invalid.ng-touched {
+  border: red 1px solid;
+}
+
+.mailing__button:hover {
+  color: #68a2ca;
+}
+
+.mailing__button:focus {
+  box-shadow: 0 0 0 3px #756257;
+}
+.mailing__button:active {
+  color: #756257;
+  opacity: 0.3;
+  outline: 0;
+}
+
 .mailing {
   background-image: url("../images/background/bridge.png");
   background-color: #83b3d3;
@@ -484,6 +551,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
+  background-repeat: no-repeat;
 }
 
 .footer__social {
@@ -502,6 +570,58 @@ body {
   width: 40px;
   height: 40px;
   margin-left: 5px;
+  display: block;
+}
+
+.social__link:hover {
+  color: #68a2ca;
+}
+
+.social__link:focus {
+  color: #68a2ca;
+  outline: 3px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.social__link:active {
+  color: #68a2ca;
+  opacity: 0.3;
+  outline: 0;
+}
+
+.copyright__link:hover {
+  color: #756257;
+}
+
+.copyright__link:focus {
+  color: #68a2ca;
+  outline: 3px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.copyright__link:active {
+  color: #756257;
+  opacity: 0.3;
+  outline: 0;
+}
+
+.contacts__phone:hover {
+  color: #756257;
+}
+
+.contacts__phone:focus {
+  color: #68a2ca;
+  outline: 3px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.copyright__link:active {
+  color: #756257;
+  opacity: 0.3;
+  outline: 0;
 }
 
 .footer__contacts contacts {
@@ -697,22 +817,27 @@ body {
   overflow: hidden;
 }
 
-.hotels__list {
+.hotels {
   width: 1056px;
+  margin: 0 auto;
+  padding: 28px 0 30px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotels__list {
   list-style-type: none;
   margin: 0 auto;
-  padding: 0;
-  margin-bottom: 42px;
+  padding: 0 0 31px 0;
 }
 
 .hotels__item {
   display: flex;
   padding: 30px 0 0 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: solid #e5e5e5;
 }
 
-.hotels__photo {
-  display: block;
+.hotels__item:first-child {
+  border-top: solid #e5e5e5;
 }
 
 .hotels__inner {
@@ -838,7 +963,6 @@ body {
 
 .hotels__rating {
   margin-left: auto;
-
   text-align: center;
 }
 
@@ -848,6 +972,7 @@ body {
   width: 18px;
   margin: 0;
   padding: 0;
+  fill: #83b3d3;
 }
 
 .hotels__linklevel {
@@ -880,9 +1005,9 @@ body {
   border-radius: 4px;
   background-clip: padding-box;
   padding: 21px 21px;
-  margin-bottom: 61px;
-  margin-left: 287px;
-  align-self: center;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .hotels__link {
@@ -900,7 +1025,7 @@ body {
 .pagination__list {
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 31px 0 0 60px;
   list-style-type: none;
 }
 
