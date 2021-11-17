@@ -186,6 +186,37 @@ body {
   z-index: 1;
 }
 
+.menu__link,
+.nav__link--active:hover {
+  color: #756257;
+}
+
+.menu__link:focus {
+  color: #68a2ca;
+  outline: 3px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.menu__link:active {
+  color: #756257;
+  opacity: 0.3;
+  outline: 0;
+}
+
+.menu__linkh:hover {
+  color: #615048;
+}
+
+.menu__linkh:focus {
+  box-shadow: 0 0 0 3px #83b3d3;
+}
+
+.menu__linkh:active {
+  color: #615048;
+  opacity: 0.3;
+  outline: 0;
+}
 
 .nav__link--active {
   text-decoration: underline;
@@ -270,6 +301,7 @@ body {
   font-weight: 700;
   text-align: center;
   color: #000000;
+
   margin: 0 0 20px 0;
 }
 
@@ -313,6 +345,7 @@ body {
 
 .container__number {
   margin: 0 0 26px 0;
+
   text-align: center;
 }
 
@@ -419,6 +452,20 @@ body {
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+.booking__button:hover {
+  color: #615048;
+}
+
+.booking__button:focus {
+  box-shadow: 0 0 0 3px #83b3d3;
+}
+
+.booking__button:active {
+  color: #615048;
+  opacity: 0.3;
+  outline: 0;
 }
 
 .placeholder:hover {
@@ -615,6 +662,7 @@ body {
   color: #68a2ca;
   outline: 3px solid #83b3d3;
   box-sizing: border-box;
+  padding: 10px;
   border-radius: 10px;
 }
 
@@ -1039,7 +1087,6 @@ body {
   text-align: center;
   width: 55px;
   height: 55px;
-
   padding: 15px 0 15px 0;
   font-size: 20px;
   line-height: 26px;
