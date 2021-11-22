@@ -11,12 +11,12 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link nav__link--active" href="catalog.html"
+              <a class="nav__link nav__link--active" href="index.html"
                 >Главная
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="catalog.html">О Седоне</a>
+              <a class="nav__link" href="index.html">О Седоне</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="catalog.html"> Гостиницы </a>
@@ -36,29 +36,50 @@
             <li class="menu__item">
               <a class="menu__link" href="#">
                 <span class="visually-hidden">Поиск</span>
-                <img
-                  class="menu__icon menu__icon--search"
-                  src="images/icons/search.svg"
-                  alt="Поиск."
-                  width="18"
-                  height="18"
-                />
+                <span class="menu__icon menu__icon--search">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="m18 16.5-3.7-3.7c1-1.3 1.7-3 1.7-4.9 0-4.4-3.6-8-8-8S0 3.6 0 8c0 4.4 3.6 8 8 8 1.8 0 3.5-.6 4.9-1.7l3.7 3.7 1.4-1.5ZM8 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6Z"
+                      fill="#000"
+                    />
+                  </svg>
+                </span>
               </a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">
                 <span class="visually-hidden"> Избранное </span>
-                <img
-                  class="menu__icon menu__icon--favorites"
-                  src="images/icons/to-favorites.svg"
-                  alt="Избранное."
-                  width="18"
-                  height="17"
-                />
+                <span class="round-green">12</span>
+                <span class="menu__icon menu__icon--favorites">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    width="18"
+                    height="17"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"
+                      fill="#000"
+                    />
+                  </svg>
+                </span>
               </a>
             </li>
-            <li class="menu__itemkh">
-              <a class="menu__linkh" href="#"> Хочу сюда </a>
+            <li class="menu__item item">
+              <a class="menu__link link" href="#"> Хочу сюда </a>
             </li>
           </ul>
         </div>
@@ -71,12 +92,34 @@
         <div class="filters__breadcrumbs breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="index.html">Домашняя</a>
+              <a class="breadcrumbs__link" href="index.html">
+                <span class="visually-hidden"> Домашняя </span>
+              <span class="breadcrumbs__icon breadcrumbs___icon--home">
+                <svg
+                aria-hidden="true"
+                focusable="false"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6 .3 0 5.8V12h12V5.8L6 .3ZM11 11H1V6.2l5-4.5 5 4.5V11Z" fill="#fff"/><path d="M4 10h1V7.5h2V10h1V6.5H4V10Z" fill="#fff"/></svg>
+              </span>
+            </a>
             </li>
-            <li class="breadcrumbs__item">
-              <a class="visually-hidden">Вперед</a>
+            <li class="breadcrumbs__itemkh">
+             <a class="arrow" href="#link">
+              <span class="visually-hidden">Cледующая</span>
+              <span class="breadcrumbs__icon breadcrumbs___icon--forward">
+                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="8" viewBox="0 0 5 8">
+                <path fill-rule="evenodd"
+                clip-rule="evenodd" d="M4.8 3.6 1 .2C.8 0 .4 0 .1.2-.2.4-.1.8.1 1l3.3 3L.2 7c-.2.2-.2.6 0 .8 0 .1.3.2.4.2.1 0 .3-.1.4-.2l3.8-3.4c.3-.2.3-.6 0-.8Z" fill="#fff"/></svg>
+              </span>
+            </a>
               <span class="breadcrumbs__label">Гостиницы</span>
-            </li>
+              </li>            
+           
           </ul>
         </div>
         <form
@@ -92,21 +135,19 @@
                   <input
                     class="visually-hidden control__input"
                     type="checkbox"
-                    name="pool"
-                  />
-                  <span class="control__mark"></span>
+                    name="pool" checked>
+                                    <span class="control__mark"></span>
                   <span class="control__label">Бассейн</span>
                 </label>
               </li>
               <li class="filter__item filter__item--infrastructure">
                 <label class="control">
                   <input
-                    class="visually-hidden control-input"
+                    class="visually-hidden control__input"
                     type="checkbox"
                     name="parking lot"
-                    checked
-                  />
-                  <span class="control__mark"></span>
+                    checked >
+                                    <span class="control__mark"></span>
                   <span class="control__label">Парковка</span>
                 </label>
               </li>
@@ -133,8 +174,8 @@
                     type="radio"
                     name="product-group"
                     value="hotel"
-                    checked
-                  />
+                    checked >
+                  
                   <span class="control__mark"></span>
                   <span class="control__label">Гостиница</span>
                 </label>
@@ -165,66 +206,91 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter__catalog">
-            <legend class="filter__title">Стоимость</legend>
-            <button class="filter__button" type="button">
-              <span class="visually-hidden">Изменить минимальную цену.</span>
-            </button>
-            <button class="filter__button" type="button">
-              <span class="visually-hidden">Изменить максимальную цену.</span>
-            </button>
-            <label class="filter__label">
-              от
-              <input class="filter__input" type="number" name="min-price" />
-              ₽
-            </label>
-            <label class="filter__label">
-              до
-              <input class="filter__input" type="number" name="max-price" />
-              ₽
-            </label>
-          </fieldset>
+          <fieldset class="filter__cost">
+          <div class="filter__range">
+            <div class="filter__range__filter--title">Стоимость, ₽:</div>
+              <div class="filter__price">
+                <input class="filter__input input--min" type="text" name="min-price" value="0">
+                <label for="filter__input input-min" class="min-price">от</label>
+                <input class="filter__input input--max"type="text" name="max-price" value="9000">
+                <label for="filter__input input--max" class="max-price">до</label>
+            </div>
+              <div class="filter__controls">
+                <div class="filter__scale">
+                  <div class="filter__bar"></div>
+                </div>
+                <div class="filter__toggle toggle--min"></div>
+                <div class="filter__toggle toggle--max"></div>
+              </div>
+            </div>
+            </fieldset>
+            <fieldset class="filter__resalt">
+          <div class="filter__button">
           <button class="filter__submit button" type="submit">Применить</button>
           <button class="filter__reset button" type="reset">Сбросить</button>
+        </div>
+      </fieldset>
         </form>
       </section>
-      <section class="sorting">
+    <section class="sorting">
+        <div class="sorting__container">
         <h2 class="visually-hidden sorting__heading">Сортировка</h2>
         <p class="sorting__counter">
           Найдено гостиниц: <span class="sorting__number">38</span>
         </p>
-        <details>
-          <summary>
-            <span class="visually-hidden">Сортировка</span>
-            <span>Сначала дешевле</span>
-          </summary>
-          <ul class="sorting__list">
-            <li class="sorting__item">
-              <a class="sorting__link__link__sorting--cheap" href="#"
-                >Сначала дешевле</a
-              >
-              <a class="sorting__link__link__sorting--expensive" href="#"
-                >Сначала дорогое</a
-              >
-              <a class="sorting__link__link__sorting--expensive" href="#"
-                >Сначала популярное</a
-              >
-            </li>
-          </ul>
-        </details>
-        <section class="sorting__view view">
-          <h2 class="visually-hidden">Cортировка</h2>
-          <button class="view__button view__button--grid">
-            <span class="visually-hidden">Показать товары сеткой</span>
-          </button>
-          <button class="view__button view__button--column">
-            <span class="visually-hidden">Показать товары плиткой</span>
-          </button>
-          <button class="view__button view__button--list view__button--active">
-            <span class="visually-hidden">Показать содержимое</span>
-          </button>
-        </section>
-      </section>
+                     <form class="sorting__type">
+                <div class="select">
+                  <label class="visually-hidden" for="sorting">Сортировка</label>
+          
+            <select class="sorting__control" id="sorting">
+          
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
+          </div>
+          <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+        </form> 
+        <form class="sorting__button"> 
+        <a href="#" class="sorting__button sorting__button--grid" type="button">
+          <span class="visually-hidden">Показать товары сеткой</span>
+          <svg
+          aria-hidden="true"
+          focusable="false"
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="46" height="46" rx="3" stroke="#E6E6E6" stroke-width="2"/><path d="M20 17h-4v6h4v-6ZM32 17h-4v6h4v-6ZM26 17h-4v6h4v-6ZM20 25h-4v6h4v-6ZM32 25h-4v6h4v-6ZM26 25h-4v6h4v-6Z" fill="#000"/></svg>
+        </a>
+        <a href="#" class="sorting__button sorting_button--column" type="button">
+          <span class="visually-hidden">Показать товары плиткой</span>
+          <svg
+          aria-hidden="true"
+          focusable="false"
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="46" height="46" rx="3" stroke="#E6E6E6" stroke-width="2"/><path d="M32 29H16v2h16v-2Zm-2-10v6H18v-6h12Zm2-2H16v10h16V17Z" fill="#000"/></svg>
+          </a>
+        <a href="#" class="sorting__button sorting__button--list sorting__button--active" type="button">
+          <span class="visually-hidden">Показать содержимое</span>
+          <svg
+          aria-hidden="true"
+          focusable="false"
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="46" height="46" rx="3" stroke="#000" stroke-width="2"/><path d="M18 17h-2v2h2v-2Zm14 0H20v2h12v-2Zm-14 4h-2v2h2v-2Zm14 0H20v2h12v-2Zm-14 4h-2v2h2v-2Zm14 0H20v2h12v-2Zm-14 4h-2v2h2v-2Zm14 0H20v2h12v-2Z" fill="#000"/></svg>
+        </a>
+      </form>
+      </div>
+      </section> 
       <section class="hotels">
       <ul class="hotels__list">
           <li class="hotels__item">
@@ -248,7 +314,7 @@
           </div>
             <div class="hotels__rating">
               <div class="hotels__stars">
-                <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                <span>★</span><span>★</span><span>★</span><span>★</span>
               </div>
               <p class="hotels__linklevel">Рейтинг: 8,5</a>
             </div>
@@ -272,7 +338,7 @@
           </div>
             <div class="hotels__rating">
               <div class="hotels__stars">
-                <span>☆</span><span>☆</span><span>☆</span>
+                <span>★</span><span>★</span><span>★</span>
               </div>
               <p class="hotels__linklevel">Рейтинг: 8,9</a>
             </div>
@@ -294,11 +360,11 @@
             <p class="hotels__paragraph"><span class="hotels__typekhk">Апартаменты</span>
             <span class="hotels__price"></span>От 2000 ₽</p>
             <a href="#" class="hotels__button__button--thorough">ПОДРОБНЕЕ</a>
-            <a href="#" class="hotels__button__button--chosenkh">В ИЗБРАННОМ</a>
+            <a href="#" class="hotels__button__button--chosengreen">В ИЗБРАННОМ</a>
           </div>
             <div class="hotels__rating">
               <div class="hotels__stars">
-                <span>☆</span><span>☆</span>
+                <span>★</span><span>★</span>
               </div>
               <p class="hotels__linklevel">Рейтинг: 9,2</a>
             </div>
@@ -322,7 +388,7 @@
           </div>
           <div class="hotels__rating">
             <div class="hotels__stars">
-              <span>☆</span><span>☆</span>
+              <span>★</span><span>★</span>
             </div>
             <p class="hotels__linklevel">Рейтинг: 9,2</a>
           </div>
@@ -358,6 +424,26 @@
             </a>
           </li>
         </ul>
+        <div class="pagination__container">
+          <h2 class="visually-hidden pagination__heading">Сортировка</h2>
+          <p class="pagination__counter">
+            Гостиниц на странице: 
+          </p>
+          <form class="pagination__type">
+            <div class="pagination__select">
+              <label class="visually-hidden" for="sorting">Сортировка</label>
+      
+        <select class="sorting__control" id="sorting">
+      
+          <option value="four">4</option>
+          <option value="three">3</option>
+          <option value="two">2</option>
+          <option value="one">1</option>
+        </select>
+      </div>
+         <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+    </form> 
+  </div>
       </div>
       </section>
       <section class="adressing">
@@ -388,64 +474,99 @@
     </main>
     <footer class="footer">
       <div class="footer__container">
-      <section class="footer__social social">
-        <h2 class="visually-hidden">мы в социальных сетях</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Твиттер</span>
-              <img
-                class="social__icon social--twitter"
-                src="images/icons/twitter.svg"
-                alt="иконка Фейсбук."
-                width="18"
-                height="15"
-              />
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Фейсбук</span>
-              <img
-                class="social__icon social--facebook"
-                src="images/icons/facebook.svg"
-                alt="иконка Фейсбук."
-                width="10"
-                height="18"
-              />
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Ютуб</span>
-              <img
-                class="social__icon social--youtube"
-                src="images/icons/youtube.svg"
-                alt="иконка Фейсбук."
-                width="20"
-                height="16"
-              />
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer__contacts contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <a class="contacts__phone" href="tel:+781281212">+7 (812) 812-12-12</a>
-      </section>
-      <section class="footer__copyright copyright">
-        <h2 class="visually-hidden">Логотип.html academy</h2>
-        <a class="copyright__link" href="https://htmlacademy.ru">
-          <img
-            class="copyright__image"
-            src="images/icons/logo_htmlacademy.svg"
-            alt="иконка htmlacademy."
-            width="115"
-            height="34"
-          />
-        </a>
-      </section>
-    </div>
+        <section class="footer__social social">
+          <h2 class="visually-hidden">мы в социальных сетях</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a
+                class="social__link social--twitter"
+                href="https://twitter.com/htmlacademy_ru"
+              >
+                <span class="visually-hidden">Твиттер</span>
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  width="18"
+                  height="15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.6.2c1.8-.5 3.2.3 3.8 1.2.7-.2 1.4-.5 2.1-.7 0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6-.2 1-1.1 1.8-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9c1.9 1.9 4 3.6 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z"
+                    fill="#83B3D3"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social--facebook"
+                href="https://www.facebook.com/htmlacademy"
+              >
+                <span class="visually-hidden">Фейсбук</span>
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  width="10"
+                  height="18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7 0C4.8 0 3 1.8 3 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z"
+                    fill="#83B3D3"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social--youtube"
+                href="https://www.youtube.com/HTMLAcademyRUS"
+              >
+                <span class="visually-hidden">Ютуб</span>
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  width="20"
+                  height="16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z"
+                    fill="#83B3D3"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer__contacts contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <a class="contacts__phone" href="tel:+781281212"
+            >+7 (812) 812-12-12</a
+          >
+        </section>
+        <section class="footer__copyright copyright">
+          <h2 class="visually-hidden">Логотип.html academy</h2>
+          <a class="copyright__link" href="https://htmlacademy.ru">
+            <img
+              class="copyright__image"
+              src="images/icons/logo_htmlacademy.svg"
+              alt="иконка htmlacademy."
+              width="115"
+              height="34"
+            />
+          </a>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

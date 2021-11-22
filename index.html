@@ -11,12 +11,12 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link nav__link--active" href="catalog.html"
+              <a class="nav__link nav__link--active" href="index.html"
                 >Главная
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="catalog.html">О Седоне</a>
+              <a class="nav__link" href="index.html">О Седоне</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="catalog.html"> Гостиницы </a>
@@ -46,20 +46,19 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
-                      fill-rule="evenodd"
+                                      <path class="menu__search" fill-rule="evenodd"
                       clip-rule="evenodd"
                       d="m18 16.5-3.7-3.7c1-1.3 1.7-3 1.7-4.9 0-4.4-3.6-8-8-8S0 3.6 0 8c0 4.4 3.6 8 8 8 1.8 0 3.5-.6 4.9-1.7l3.7 3.7 1.4-1.5ZM8 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6Z"
                       fill="#000"
                     />
-                  </svg>
+                                    </svg>
                 </span>
               </a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">
                 <span class="visually-hidden"> Избранное </span>
-                <span class="round-green">12</span>
+                  <span class="round-green">12</span>
                 <span class="menu__icon menu__icon--favorites">
                   <svg
                     aria-hidden="true"
@@ -77,9 +76,53 @@
                   </svg>
                 </span>
               </a>
-            </li>
-            <li class="menu__itemkh">
-              <a class="menu__linkh" href="#"> Хочу сюда </a>
+              <div class="popover popover__cart">
+                <ul class="cart__items--list">
+                      <li class="cart__item">
+                      <a class="cart__link" href="#">
+                        <img
+                          class="cart__photo"
+                          src="images/photos/DesertQuailInn.png"
+                          width="48"
+                          height="48"
+                          alt="Фото гостиницы Дєсерт Квол Ин."
+                      /></a>
+                      <div class="popover__text">
+                      <h3 class="cart__title">Desert Quail Inn</h3> 
+                      <p class="cart__paragraph"><span class="cart__type">Мотель</span>
+                      </div> 
+                    <button type="button" class="cart-item-button button">
+                      <svg width="16" height="16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z" fill="#000"/><path d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z" fill="#000"/></svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="cart__item">
+                    <a class="cart__link" href="#">
+                      <img
+                        class="cart__photo"
+                        src="images/photos/VillasatPoco Diablo.png"
+                        width="48"
+                        height="48"
+                        alt="Фото гостиницы Дєсерт Квол Ин."
+                    /></a>
+                    <div class="cart_text">
+                    <h3 class="cart__title">Villas at Poco Diablo</h3> 
+                    <p class="cart__paragraph"><span class="cart__type">Апартаменты</p>
+                    </div>
+                  <button type="button" class="cart-item-button button">
+                    <svg width="16" height="16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z" fill="#000"/><path d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z" fill="#000"/></svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+                </ul>
+                              <button class="popover__button button--light">
+                <span class="popover_button__button--resalt">Все избранные</span>
+                </button>
+              </div>
+            <li class="menu__item item">
+              <a class="menu__link link" href="#"> Хочу сюда </a>
             </li>
           </ul>
         </div>
@@ -194,7 +237,7 @@
         <section class="booking">
           <h2 class="booking__heading">Заинтересовались?</h2>
           <p class="booking__paragraph">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+            Укажите предполагаемые даты поездки,&nbspи мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
           <button class="booking__button" type="submit">
@@ -238,6 +281,7 @@
                 href="https://twitter.com/htmlacademy_ru"
               >
                 <span class="visually-hidden">Твиттер</span>
+                <span class="menu__icon menu__icon--twitter"></span>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -323,5 +367,54 @@
         </section>
       </div>
     </footer>
+    <div class="modal-container modal-container-close">
+          <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="modal__date">
+              Дата заезда: 
+            </p>
+
+            <p class="field-group">
+              <label class="visually-hidden" for="auth-date">27 апреля 2020</label>
+              <input class="auth-form-field field" type="text" id="auth-date" name="auth-date" placeholder="27 апреля 2020">
+              <span class="modal__textred">Мы не можем отправить вас в прошлое.</span>
+            </p>
+            <p class="modal__date">
+              Дата заезда: 
+            </p>
+            <p class="field-group">
+              <label class="visually-hidden" for="auth-date">1 сентября 2021</label>
+              <input class="auth-form-field field" type="password" id="auth-date" name="auth-password" placeholder="1 сентября 2021">
+              <span class="modal__text">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+            <p class="modal__namber">
+             Взрослые: 
+            </p>
+            <p class="field-group">
+              
+              <label class="visually-hidden" for="auth-number">2</label>
+              <input class="number-form-field field" type="password" id="auth-number" name="auth-number" placeholder="2">
+              <button class="plus" type="submit">+</button>
+            </p>
+            <p class="modal__number">
+              Дети: 
+             </p>
+            <p class="field-group">
+                           <label class="visually-hidden" for="auth-number">1</label>
+              <input class="number-form-field field" type="number" id="auth-date" name="auth-number" placeholder="1">
+              
+            </p>
+      </form>
+      <button class="mailing__button" type="submit">
+       Найти
+      </button>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
