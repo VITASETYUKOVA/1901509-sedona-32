@@ -134,7 +134,7 @@ body {
   z-index: 1;
 }
 
-.menu__link__link--chosen {
+.menu__link__link--button {
   display: inline-block;
   font-family: "PT Sans", sans-serif;
   text-decoration: none;
@@ -154,16 +154,17 @@ body {
   cursor: pointer;
 }
 
-.menu__link__link--chosen:hover {
+.menu__link__link--button:hover {
   background-color: #615048;
 }
 
-.menu__link__link--chosen:focus {
+.menu__link__link--button:focus {
   box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
   background-color: #615048;
 }
 
-.menu__link__link--chosen:active {
+.menu__link__link--button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #615048;
   box-shadow: none;
