@@ -327,7 +327,6 @@ body {
 
 .advantages__list {
   display: flex;
-
   margin: 0;
   padding: 0;
   text-align: center;
@@ -348,7 +347,6 @@ body {
   font-weight: 700;
   text-align: center;
   color: #000000;
-
   margin: 0 0 20px 0;
 }
 
@@ -407,7 +405,6 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url("../images/background/lodging.svg");
   max-width: 400px;
-
   text-align: center;
   padding: 184px 75px 79px 75px;
 }
@@ -455,8 +452,6 @@ body {
 
 .booking {
   background-color: #ffffff;
-  max-width: 720px;
-  padding: 91px 240px;
 }
 
 .booking__heading {
@@ -466,8 +461,9 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 91px;
-  margin: 0px;
+  margin-top: 91px;
+  margin-right: auto;
+  margin-left: auto;
   justify-content: center;
 }
 
@@ -476,13 +472,17 @@ body {
   font-size: 22px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 15px;
-  justify-content: center;
-  min-width: 720px;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 61px;
+  width: 720px;
 }
 
 .booking__button {
   font-family: "PT Sans", sans-serif;
+  display: block;
   text-decoration: none;
   font-size: 20px;
   font-weight: 700;
@@ -494,11 +494,11 @@ body {
   border-radius: 10px;
   background-clip: padding-box;
   padding: 13px 17px;
-  margin-top: 91px;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
+  margin-bottom: 91px;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
+  border: none;
 }
 
 .booking__button:hover {
@@ -507,6 +507,7 @@ body {
 
 .booking__button:focus {
   box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
 }
 
 .booking__button:active {
@@ -515,32 +516,41 @@ body {
   outline: 0;
 }
 
-.placeholder:hover {
-  color: #e5e5e5;
+.mailing__input:hover:not(:disabled) {
+  background-color: #e5e5e5;
 }
 
-.placeholder:focus {
+.mailing__input:focus {
+  background-color: #e5e5e5;
   box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
 }
-.input[type="text"]:placeholder__shown:active {
-  border: 2px solid #000000;
+.mailing__input:active {
+  outline: 2px solid #000000;
+  background-color: #ffffff;
+  box-shadow: none;
+  border: none;
 }
 
-.input.ng-invalid.ng-touched {
+.mailing__input.invalid:not(:disabled) {
   border: red 1px solid;
 }
 
 .mailing__button:hover {
-  color: #68a2ca;
+  background-color: #68a2ca;
 }
 
 .mailing__button:focus {
+  background-color: #68a2ca;
   box-shadow: 0 0 0 3px #756257;
+  outline: none;
 }
 .mailing__button:active {
-  color: #756257;
+  background-color: #68a2ca;
+  color: #fcfcfc;
   opacity: 0.3;
-  outline: 0;
+  box-shadow: none;
+  outline: none;
 }
 
 .mailing {
@@ -573,6 +583,10 @@ body {
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 26px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 500px;
 }
 
 .mailing__input {
@@ -590,10 +604,12 @@ body {
   max-height: 60px;
   padding: 17px 17px;
   box-sizing: border-box;
+  outline: none;
 }
 
 .mailing__button {
   font-family: "PT Sans", sans-serif;
+  position: absolute;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
@@ -602,7 +618,7 @@ body {
   text-align: center;
   color: #fcfcfc;
   background-color: #83b3d3;
-  border: 0;
+  border: none;
   border-radius: 0 10px 10px 0;
   background-clip: padding-box;
   padding: 17px 34px;
@@ -815,6 +831,15 @@ body {
   padding: 0;
 }
 
+.breadcrumbs__item {
+  width: 27px;
+  height: 27px;
+}
+
+.breadcrumbs__link {
+  padding: 2px 7px 3px 7px;
+}
+
 .breadcrumbs___icon--home svg:hover {
   fill: #ffffff;
   opacity: 0.6;
@@ -824,10 +849,11 @@ body {
   opacity: 0.6;
 }
 
-.breadcrumbs___icon--home svg:focus {
+.breadcrumbs__link:focus {
   box-shadow: 0 0 0 3px #83b3d3;
   outline: none;
   border-radius: 2px;
+  box-sizing: border-box;
 }
 
 .breadcrumbs__label:focus {
@@ -854,9 +880,6 @@ body {
 
   display: inline-block;
 }
-.breadcrumbs___icon--home {
-  margin: 0 10px 0 0;
-}
 
 .breadcrumbs__label {
   color: #ffffff;
@@ -864,6 +887,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   text-align: center;
+  padding: 4px 5px 3px 5px;
 }
 
 .filter__title {
@@ -915,13 +939,12 @@ body {
 
 .filter__cost {
   margin: 45px 81px 40px 0;
-
   padding: 0;
   border: none;
 }
+
 .filter__resalt {
   margin: 105px 0 0 0;
-
   border: none;
   padding: 0;
 }
@@ -937,15 +960,15 @@ body {
 }
 
 .filter__submit.button:hover {
-  color: #68a2ca;
+  background-color: #68a2ca;
 }
 
 .filter__submit.button:focus {
   box-shadow: 0 0 0 3px #ffffff;
-  color: #68a2ca;
 }
+
 .filter__submit.button:active {
-  color: #68a2ca;
+  background-color: #68a2ca;
   opacity: 0.3;
   outline: 0;
 }
@@ -955,10 +978,10 @@ body {
   opacity: 0.6;
 }
 
-.filter__submit.button:focus {
+.filter__reset.button:focus {
   box-shadow: 0 0 0 3px #83b3d3;
 }
-.filter__submit.button:active {
+.filter__reset.button:active {
   color: #ffffff;
   opacity: 0.3;
   outline: 0;
@@ -1040,10 +1063,8 @@ body {
 
 .filter__price {
   position: relative;
-
   height: 48px;
   margin-bottom: 32px;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -1053,10 +1074,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 2px;
   height: 48px;
-
   background: #ffffff;
   transform: translate(-50%, -50%);
 }
@@ -1108,14 +1127,12 @@ body {
 
 .filter__controls .filter__scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
 .filter__controls .filter__bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
@@ -1125,15 +1142,13 @@ body {
   width: 20px;
   height: 20px;
   background: #ffffff;
-
   border-radius: 5px;
   cursor: pointer;
 }
 
 .filter__toggle:hover {
-  opacity: 0.25;
+  outline: 3px solid rgba(0, 0, 0, 0.25);
 }
-
 .filter__toggle:focus {
   box-shadow: 0 0 0 3px #83b3d3;
   opacity: 0.25;
@@ -1151,20 +1166,18 @@ body {
   left: 80%;
 }
 
-.label.min-price + .input.filter__input--min:hover {
-  display: block;
-  box-shadow: 0 0 0 3px #ffffff;
+.filter__price:hover {
+  outline: 0 0 0 3px #ffffff;
+
   opacity: 0.6;
 }
-.label.min-price + .input.filter__input--min:focus {
-  display: block;
-  outline: 0 0 0 3px #81b3d2;
-  box-shadow: 0 0 0 3px #ffffff;
+.filter__price:focus {
+  box-shadow: 0 0 0 3px #83b3d3;
+  border: 2px solid #ffffff;
+  box-shadow: inset 0 0 0 3px #83b3d3;
 }
 
-.label.min-price + .input.filter__input--min:active {
-  display: block;
-  outline: 0 0 0 3px #ffffff;
+.filter__price:active {
   background-color: #756257;
 }
 
@@ -1189,17 +1202,17 @@ body {
 .filter__reset.button {
   font-family: "PT Sans", sans-serif;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 21px;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
   text-align: center;
   color: #fcfcfc;
   background: none;
   border: 0;
   border-radius: 4px;
   background-clip: padding-box;
-  padding: 15px 34px;
+  padding: 5px 14px;
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -1261,6 +1274,8 @@ body {
 }
 
 .sorting__control:active {
+  color: #333333;
+  opacity: 0.3;
   box-shadow: 0 0 0 2px #e5e5e5;
   outline: none;
 }
@@ -1282,6 +1297,7 @@ body {
 .sorting_button--column:hover {
   box-shadow: 0 0 0 2px #83b3d3;
   outline: none;
+  border-radius: 4px;
 }
 
 .sorting_button--column:focus {
@@ -1325,7 +1341,7 @@ body {
   border-radius: 4px;
 }
 
-.sorting__button--list.sorting__button--active:focus {
+.sorting__button--list.sorting__button--active:active {
   box-shadow: 0 0 0 2px #000000;
   outline: none;
   border-radius: 4px;
@@ -1389,6 +1405,7 @@ body {
 
 .adressing__button {
   font-family: "PT Sans", sans-serif;
+  position: absolute;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
@@ -1397,12 +1414,49 @@ body {
   text-align: center;
   color: #fcfcfc;
   background-color: #83b3d3;
-  border: 0;
+  border: none;
   border-radius: 0 10px 10px 0;
   background-clip: padding-box;
   padding: 17px 34px;
   box-sizing: border-box;
   cursor: pointer;
+}
+
+.adressing__input:hover:not(:disabled) {
+  background-color: #e5e5e5;
+}
+
+.adressing__input:focus {
+  background-color: #e5e5e5;
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
+}
+.adressing__input:active {
+  outline: 2px solid #000000;
+  background-color: #ffffff;
+  box-shadow: none;
+  border: none;
+}
+
+.adressing__input.invalid:not(:disabled) {
+  border: red 1px solid;
+}
+
+.adressing__button:hover {
+  background-color: #68a2ca;
+}
+
+.adressing__button:focus {
+  background-color: #68a2ca;
+  box-shadow: 0 0 0 3px #756257;
+  outline: none;
+}
+.adressing__button:active {
+  background-color: #68a2ca;
+  color: #fcfcfc;
+  opacity: 0.3;
+  box-shadow: none;
+  outline: none;
 }
 
 .adressing__form {
@@ -1468,7 +1522,7 @@ body {
 }
 
 .hotels__title {
-  font-family: "PT Sans", sans-serif;;
+  font-family: "PT Sans", sans-serif;
   text-decoration: none;
   color: #000000;
   line-height: 31px;
@@ -1603,7 +1657,7 @@ body {
   outline: none;
 }
 
-.hotels__button__button--chosengreen:focus {
+.hotels__button__button--chosen:focus {
   color: #ffffff;
   background-color: #68a2ca;
   box-shadow: 0 0 0 3px #756257;
@@ -1614,7 +1668,27 @@ body {
   color: #ffffff;
   opacity: 0.3;
   background-color: #68a2ca;
+  box-shadow: 0 0 0 1px #756257;
+  outline: none;
+}
+.hotels__button__button--chosen:hover {
+  color: #ffffff;
+  background-color: #6c9e42;
+
+  outline: none;
+}
+
+.hotels__button__button--chosengreen:focus {
+  color: #ffffff;
+  background-color: #68a2ca;
   box-shadow: 0 0 0 3px #756257;
+  outline: none;
+}
+
+.hotels__button__button--chosengreen:active {
+  color: #ffffff;
+  opacity: 0.3;
+  background-color: #6c9e42;
   outline: none;
 }
 
@@ -1716,6 +1790,7 @@ body {
 
 .hotels__button {
   font-family: "PT Sans", sans-serif;
+  display: block;
   text-decoration: none;
   font-size: 20px;
   font-weight: 700;
@@ -1731,6 +1806,7 @@ body {
   left: 50%;
   transform: translate(-50%, 0);
   cursor: pointer;
+  border: none;
 }
 
 .hotels__link {
