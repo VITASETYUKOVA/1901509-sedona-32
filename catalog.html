@@ -113,7 +113,11 @@
                 clip-rule="evenodd" d="M4.8 3.6 1 .2C.8 0 .4 0 .1.2-.2.4-.1.8.1 1l3.3 3L.2 7c-.2.2-.2.6 0 .8 0 .1.3.2.4.2.1 0 .3-.1.4-.2l3.8-3.4c.3-.2.3-.6 0-.8Z" fill="#fff"/></svg>
               </span>
             </a>
+          </li> 
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
               <span class="breadcrumbs__label">Гостиницы</span>
+            </a>
               </li>            
                      </ul>
         </div>
@@ -181,8 +185,8 @@
                     class="visually-hidden control__input"
                     type="radio"
                     name="product-group"
-                    value="motel"
-                  />
+                    value="motel">
+                                 
                   <span class="control__mark"></span>
                   <span class="control__label">Мотель</span>
                 </label>
@@ -193,9 +197,8 @@
                     class="visually-hidden control__input"
                     type="radio"
                     name="product-group"
-                    value="apartments"
-                  />
-                  <span class="control__mark"></span>
+                    value="apartments">
+                                    <span class="control__mark"></span>
                   <span class="control__label">Апартаменты</span>
                 </label>
               </li>
@@ -214,8 +217,20 @@
                 <div class="filter__scale">
                   <div class="filter__bar"></div>
                 </div>
-                <div class="filter__toggle toggle--min"></div>
-                <div class="filter__toggle toggle--max"></div>
+                <div class="filter__toggle toggle--min">
+                <button class="visually-hidden" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену</span>
+                </button>
+              </div>
+              
+              <div class="filter__toggle toggle--max">
+              <button class="visually-hidden" type="button">
+                <span class="visually-hidden">Изменить максимальную цену</span>
+              </button>
+            </div>
+
+               
+                
               </div>
             </div>
             </fieldset>
@@ -247,46 +262,46 @@
         <form class="sorting__button"> 
         <a href="#" class="sorting__button sorting__button--grid" type="button">
           <span class="visually-hidden">Показать товары сеткой</span>
-          <svg
+          <svg class="sorting__icon" 
           aria-hidden="true"
           focusable="false"
-          width="48"
-          height="48"
-          viewBox="0 0 48 48"
+          width="16"
+          height="14"
+          viewBox="0 0 16 14"
           fill="none"
           xmlns="http://www.w3.org/2000/svg">
-          <rect x="1" y="1" width="46" height="46" rx="3" stroke="#E6E6E6" stroke-width="2"/><path d="M20 17h-4v6h4v-6ZM32 17h-4v6h4v-6ZM26 17h-4v6h4v-6ZM20 25h-4v6h4v-6ZM32 25h-4v6h4v-6ZM26 25h-4v6h4v-6Z" fill="#000"/></svg>
+          <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/></svg>
         </a>
-        <a href="#" class="sorting__button sorting_button--column" type="button">
+        <a href="#" class="sorting__button sorting__button--column" type="button">
           <span class="visually-hidden">Показать товары плиткой</span>
-          <svg
+          <svg class="sorting__icon" 
           aria-hidden="true"
           focusable="false"
-          width="48"
-          height="48"
-          viewBox="0 0 48 48"
+          width="16"
+          height="14"
+          viewBox="0 0 16 14"
           fill="none"
           xmlns="http://www.w3.org/2000/svg">
-          <rect x="1" y="1" width="46" height="46" rx="3" stroke="#E6E6E6" stroke-width="2"/><path d="M32 29H16v2h16v-2Zm-2-10v6H18v-6h12Zm2-2H16v10h16V17Z" fill="#000"/></svg>
+          <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/></svg>
           </a>
         <a href="#" class="sorting__button sorting__button--list sorting__button--active" type="button">
           <span class="visually-hidden">Показать содержимое</span>
-          <svg
+          <svg class="sorting__icon sorting__icon--active" 
           aria-hidden="true"
           focusable="false"
-          width="48"
-          height="48"
-          viewBox="0 0 48 48"
+          width="16"
+          height="14"
+          viewBox="0 0 16 14"
           fill="none"
           xmlns="http://www.w3.org/2000/svg">
-          <rect x="1" y="1" width="46" height="46" rx="3" stroke="#000" stroke-width="2"/><path d="M18 17h-2v2h2v-2Zm14 0H20v2h12v-2Zm-14 4h-2v2h2v-2Zm14 0H20v2h12v-2Zm-14 4h-2v2h2v-2Zm14 0H20v2h12v-2Zm-14 4h-2v2h2v-2Zm14 0H20v2h12v-2Z" fill="#000"/></svg>
+          <path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" fill="#000"/></svg>
         </a>
       </form>
       </div>
       </section> 
       <section class="hotels">
       <ul class="hotels__list">
-          <li class="hotels__item">
+          <li class="hotels__item" >
             <a class="hotels__link" href="#"
               ><img
                 class="hotels__photo"
@@ -297,7 +312,7 @@
               />
             </a>
             <div class="hotels__inner">
-            <a class="hotels__link" href="#">
+            <a class="hotels__linktitle" href="#">
               <h3 class="hotels__title">Amara Resort & Spa</h3>
             </a>
             <p class="hotels__paragraph"><span class="hotels__type">Гостиница</span>
@@ -322,7 +337,7 @@
                 alt="Фото гостиницы Дєсерт Квол Ин."
             /></a>
             <div class="hotels__inner">
-              <a class="hotels__link" href="#">
+              <a class="hotels__linktitle" href="#">
               <h3 class="hotels__title">Desert Quail Inn</h3> </a>
               <p class="hotels__paragraph"><span class="hotels__typekh">Мотель</span>
             <span class="hotels__price"></span>От 3000 ₽</p>
@@ -347,7 +362,7 @@
             /></a>
             
               <div class="hotels__inner">
-                <a class="hotels__link" href="#">
+                <a class="hotels__linktitle" href="#">
               <h3 class="hotels__title">Villas at Poco Diablo</h3></a>
             </a>
             <p class="hotels__paragraph"><span class="hotels__typekhk">Апартаменты</span>
@@ -372,7 +387,7 @@
                 alt="Фото гостиницы Грин Ти Ин."
             /></a>
             <div class="hotels__inner">
-            <a class="hotels__link" href="#"> 
+            <a class="hotels__linktitle" href="#"> 
               <h3 class="hotels__title">GreenTree Inn</h3> </a>
               <p class="hotels__paragraph"><span class="hotels__type">Гостиница</span>
             <span class="hotels__price">От 3000 ₽</span></p>
