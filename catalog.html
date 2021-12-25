@@ -204,29 +204,28 @@
             </ul>
           </fieldset>
           <fieldset class="filter__cost">
-          <div class="filter__range">
-            <div class="filter__range__filter--title">Стоимость, ₽:</div>
-              <div class="filter__price">
-                <div class="filter__input input--min wrapper">
-                <input class="filter__input input--min" type="text" name="min-price" value="0">
-                <label for="filter__input input-min" class="min-price">от</label>
+            <div class="filter__range">
+              <div class="filter__range__filter--title">Стоимость, ₽:</div>
+                <div class="filter__price">
+                  <div class="filter__input filter__input--min wrapper ">
+                    <input  type="text" class="filter__input input--min" id="min-price" value="0">
+                    <label for="min-price" class="filter__input input-min">от</label>
+                  </div>
+                  <div class="filter__input filter__input--max wrapper">
+                  <input type="text" class="filter__input input--max" id="max-price" value="9000">
+                  <label  for="max-price" class="filter__input input--max">до</label>
                 </div>
-                <div class="filter__input input--max wrapper">
-                <input class="filter__input input--max"type="text" name="max-price" value="9000">
-                <label for="filter__input input--max" class="max-price">до</label>
               </div>
-            </div>
-              <div class="filter__controls">
-                <div class="filter__scale">
-                  <div class="filter__bar"></div>
+                <div class="filter__controls">
+                  <div class="filter__scale">
+                    <div class="filter__bar"></div>
+                  </div>
+                  <div class="filter__toggle toggle--min">
+                  <button class="visually-hidden" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </button>
                 </div>
-                <div class="filter__toggle toggle--min">
-                <button class="visually-hidden" type="button">
-                  <span class="visually-hidden">Изменить минимальную цену</span>
-                </button>
-              </div>
-              
-              <div class="filter__toggle toggle--max">
+                            <div class="filter__toggle toggle--max">
               <button class="visually-hidden" type="button">
                 <span class="visually-hidden">Изменить максимальную цену</span>
               </button>
