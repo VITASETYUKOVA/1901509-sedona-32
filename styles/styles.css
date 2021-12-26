@@ -216,7 +216,6 @@ body {
 .nav__link--active:focus {
   color: #756257;
   outline: 3px solid #83b3d3;
-
   box-sizing: border-box;
   border-radius: 10px;
 }
@@ -256,7 +255,6 @@ body {
 
 .menu__link:focus {
   outline: 3px solid #83b3d3;
-
   box-sizing: border-box;
   border-radius: 10px;
   fill: #756257;
@@ -760,7 +758,6 @@ body {
 .contacts__phone:focus {
   color: #756257;
   outline: 3px solid #83b3d3;
-
   box-sizing: border-box;
   border-radius: 10px;
 }
@@ -859,7 +856,6 @@ body {
 }
 .menu__link:focus-visible + .breadcrumbs__label {
   box-shadow: 0 0 0 3px #83b3d3;
-
   border-radius: 2px;
 }
 
@@ -1370,7 +1366,6 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%);
 }
 
@@ -1385,7 +1380,6 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-
   outline: 2px solid #000000;
   border-radius: 4px;
 }
@@ -1398,7 +1392,6 @@ body {
 
 .sorting__button--column:focus {
   box-shadow: 0 0 0 2px #83b3d3;
-
   outline: none;
   border-radius: 4px;
 }
@@ -1638,7 +1631,6 @@ body {
 
 .hotels__link {
   text-decoration: none;
-
   margin: 0;
   padding: 0;
 }
@@ -1813,7 +1805,6 @@ body {
 .hotels__button__button--chosengreen:hover {
   color: #ffffff;
   background-color: #6c9e42;
-
   outline: none;
 }
 
@@ -2225,23 +2216,21 @@ body {
 
 .modal-close-button {
   position: absolute;
-  padding: 0;
+  padding: 20px;
   top: 54px;
   right: 70px;
   width: 53px;
   height: 53px;
-  background-color: #ffffff;
-  border: none;
-  background-image: url(../images/icons/modalclose.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #f2f2f2;
+
+  border-radius: 50%;
+  border: transparent;
+
   cursor: pointer;
 }
-.modal-container-close {
-  display: none;
-}
+
 .modal-close-button:hover {
-  background-color: #e5e5e5;
+  background-color: #e6e6e6;
 }
 
 .modal-close-button:focus {
@@ -2249,8 +2238,9 @@ body {
   outline: none;
   border-radius: 50%;
 }
-.modal-close-button:active {
-  fill: #e5e5e5;
+.modal-close-button:active path {
+  fill: #e6e6e6;
+  background-color: #e6e6e6;
 }
 
 .modal-title {
@@ -2281,7 +2271,7 @@ body {
   font: inherit;
   font-weight: 700;
   background-color: #f2f2f2;
-  box-shadow: 0 0 0 4px #f2f2f2;
+
   outline: none;
   border-radius: 4px;
   border: none;
@@ -2297,6 +2287,54 @@ body {
   width: 382px;
 }
 
+.auth-form .field:hover:not(:disabled) {
+  background-color: #e5e5e5;
+}
+.auth-form .field:focus {
+  background-color: #e5e5e5;
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
+}
+
+.auth-form .field:active {
+  outline: 2px solid #000000;
+  background-color: #ffffff;
+  box-shadow: none;
+  border: none;
+}
+
+.number-form-field.field.adults:hover:not(:disabled) {
+  background-color: #e5e5e5;
+}
+.number-form-field.field.adults:focus {
+  background-color: #e5e5e5;
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
+}
+
+.number-form-field.field.adults:active {
+  outline: 2px solid #000000;
+  background-color: #ffffff;
+  box-shadow: none;
+  border: none;
+}
+
+.number-form-field.field :hover:not(:disabled) {
+  background-color: #e5e5e5;
+}
+.number-form-field.field :focus {
+  background-color: #e5e5e5;
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
+}
+
+.number-form-field.field :active {
+  outline: 2px solid #000000;
+  background-color: #ffffff;
+  box-shadow: none;
+  border: none;
+}
+
 .number-form-field.field {
   width: 103px;
   margin: 40px 0 0 0;
@@ -2304,7 +2342,7 @@ body {
   font: inherit;
   font-weight: 700;
   background-color: #f2f2f2;
-  box-shadow: 0 0 0 4px #f2f2f2;
+
   outline: none;
   border-radius: 4px;
   border: none;
@@ -2320,7 +2358,7 @@ body {
   font: inherit;
   font-weight: 700;
   background-color: #f2f2f2;
-  box-shadow: 0 0 0 4px #f2f2f2;
+
   outline: none;
   border-radius: 4px;
   border: none;
@@ -2417,11 +2455,23 @@ body {
   display: block;
 }
 
+.info:focus ~ .tooltip {
+  display: block;
+}
+
+.info:focus {
+  background-color: #68a2ca;
+  outline: none;
+}
+
 .info {
-  border: none;
-  background: none;
-  margin: 42px 10px 0 10px;
+  border: transparent;
+  margin: 52px 10px 0 10px;
   padding: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #83b3d3;
 }
 
 .modal__button {
@@ -2447,12 +2497,14 @@ body {
   background-color: #68a2ca;
 }
 
-.button-plus:focus {
-  box-shadow: 0 0 0 3px #68a2ca;
+.modal__button:focus {
+  box-shadow: 0 0 0 3px #756257;
   outline: none;
   border-radius: 4px;
 }
-.button-plus:active {
+.modal__button:active {
+  color: #ffffff;
+  opacity: 0.3;
   background-color: #68a2ca;
 }
 
@@ -2488,58 +2540,69 @@ body {
 
 .button-more-less.more {
   position: absolute;
-  top: 68%;
+  top: 67%;
   left: 330px;
-  width: 13px;
-  height: 13px;
+  padding: 6px;
+  width: 25px;
+  height: 25px;
   background-color: transparent;
-  border: none;
-  background-image: url(../images/icons/Plus.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  border: transparent;
   cursor: pointer;
+  opacity: 0.3;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-more-less.less {
   position: absolute;
-  top: 69%;
-  left: 240px;
-  width: 13px;
-  height: 1px;
+  top: 67%;
+  left: 232px;
+
+  width: 25px;
+  height: 25px;
   background-color: transparent;
-  border: none;
-  background-image: url(../images/icons/Minus.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  border: transparent;
   cursor: pointer;
+  opacity: 0.3;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-plus {
   position: absolute;
-  top: 68%;
+  top: 67%;
   left: 617px;
-  width: 13px;
-  height: 13px;
+  padding: 6px;
+  width: 25px;
+  height: 25px;
   background-color: transparent;
-  border: none;
-  background-image: url(../images/icons/Plus.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  border: transparent;
   cursor: pointer;
+  opacity: 0.3;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-minus {
   position: absolute;
-  top: 69%;
+  top: 67%;
   left: 520px;
-  width: 13px;
-  height: 1px;
+  width: 25px;
+  height: 25px;
   background-color: transparent;
-  border: none;
+  border: transparent;
   cursor: pointer;
-  background-image: url(../images/icons/Minus.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  opacity: 0.3;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .auth-form-field.field::-webkit-input-placeholder {
@@ -2563,14 +2626,14 @@ body {
 }
 
 .button-minus:hover {
-  fill: #000000;
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .button-minus:focus {
   box-shadow: 0 0 0 3px #83b3d3;
   outline: none;
   border-radius: 4px;
+  opacity: 1;
 }
 .button-minus:active {
   fill: #000000;
@@ -2578,14 +2641,14 @@ body {
 }
 
 .button-plus:hover {
-  fill: #000000;
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .button-plus:focus {
   box-shadow: 0 0 0 3px #83b3d3;
   outline: none;
   border-radius: 4px;
+  opacity: 1;
 }
 .button-plus:active {
   fill: #000000;
@@ -2593,14 +2656,14 @@ body {
 }
 
 .button-more-less.more:hover {
-  fill: #000000;
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .button-more-less.more:focus {
   box-shadow: 0 0 0 3px #83b3d3;
   outline: none;
   border-radius: 4px;
+  opacity: 1;
 }
 .button-more-less.more:active {
   fill: #000000;
@@ -2608,16 +2671,19 @@ body {
 }
 
 .button-more-less.less:hover {
-  fill: #000000;
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .button-more-less.less:focus {
   box-shadow: 0 0 0 3px #83b3d3;
   outline: none;
   border-radius: 4px;
+  opacity: 1;
 }
 .button-more-less.less:active {
   fill: #000000;
   opacity: 0.2;
+}
+.modal-container-close {
+  display: none;
 }
