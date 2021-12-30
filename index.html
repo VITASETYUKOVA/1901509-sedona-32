@@ -138,7 +138,6 @@
                         <span class="cart__type">Апартаменты</span>
                       </p>
                     </div>
-
                     <button type="button" class="cart-item-button button">
                       <svg
                         class="cart_icon"
@@ -461,21 +460,16 @@
               <label class="modal__date" for="auth-datewgrong"
                 >Дата заезда:</label
               >
-              <p class="field-group">
-                <label class="visually-hidden" for="auth-datewgrong"
-                  >27 апреля 2020</label
-                >
-                <input
-                  class="auth-form-field field"
-                  type="text"
-                  id="auth-datewgrong"
-                  name="auth-date"
-                  placeholder="27 апреля 2020"
-                />
-                <button class="calendararrival" type="button">
-                  <span class="visually-hidden">Выбрать дату</span>
-                </button>
-              </p>
+              <input
+                class="auth-form-field field"
+                type="text"
+                id="auth-datewgrong"
+                name="auth-date"
+                placeholder="27 апреля 2020"
+              />
+              <button class="calendararrival" type="button">
+                <span class="visually-hidden">Выбрать дату</span>
+              </button>
             </div>
             <span class="modal__textred"
               >Мы не можем отправить вас в прошлое.</span
@@ -484,138 +478,124 @@
               <label class="modal__date" for="auth-datewright"
                 >Дата выезда:</label
               >
-              <p class="field-group">
-                <label class="visually-hidden" for="auth-datewright"
-                  >1 сентября 2021</label
-                >
-                <input
-                  class="auth-form-field field"
-                  type="text"
-                  id="auth-datewright"
-                  name="auth-date"
-                  placeholder="1 сентября 2021"
-                />
-                <button class="calendar" type="button">
-                  <span class="visually-hidden">Выбрать дату</span>
-                </button>
-              </p>
+              <input
+                class="auth-form-field field"
+                type="text"
+                id="auth-datewright"
+                name="auth-date"
+                placeholder="1 сентября 2021"
+              />
+              <button class="calendar" type="button">
+                <span class="visually-hidden">Выбрать дату</span>
+              </button>
             </div>
             <span class="modal__text"
               >На эти даты есть свободные номера. Пока есть.</span
             >
             <div class="modal__options">
               <label class="modal__number" for="auth-number">Взрослые:</label>
-              <p class="field-group auth-form-user-options">
-                <label class="visually-hidden" for="auth-number">2</label>
-                <button class="button-more-less less" type="button">
-                  <svg
-                    aria-hidden="true"
-                    focusable="false"
-                    width="13"
-                    height="1"
-                    viewBox="0 0 13 1"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      class="copyright__image"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0 0v1h13V0H0Z"
-                      fill="#000"
-                    />
-                  </svg>
-                </button>
-                <input
-                  class="number-form-field field adults"
-                  type="text"
-                  id="auth-number"
-                  name="auth-number"
-                  placeholder="2"
-                />
-                <button class="button-more-less more" type="button">
-                  <svg
-                    aria-hidden="true"
-                    focusable="false"
-                    width="13"
-                    height="13"
-                    viewBox="0 0 13 13"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" />
-                  </svg>
-                </button>
-              </p>
+              <button class="button-more-less less" type="button">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  width="13"
+                  height="1"
+                  viewBox="0 0 13 1"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="copyright__image"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 0v1h13V0H0Z"
+                    fill="#000"
+                  />
+                </svg>
+              </button>
+              <input
+                class="number-form-field field adults"
+                type="text"
+                id="auth-number"
+                name="auth-number"
+                placeholder="2"
+              />
+              <button class="button-more-less more" type="button">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  width="13"
+                  height="13"
+                  viewBox="0 0 13 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" />
+                </svg>
+              </button>
               <label class="modal__numberchildren" for="auth-numberchildren"
                 >Дети:</label
               >
-              <p class="field-group auth-form-user-options">
-                <label class="visually-hidden" for="auth-numberchildren"
-                  >1</label
+              <button class="button-minus" type="button">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  width="13"
+                  height="1"
+                  viewBox="0 0 13 1"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                <button class="button-minus" type="button">
-                  <svg
-                    aria-hidden="true"
-                    focusable="false"
-                    width="13"
-                    height="1"
-                    viewBox="0 0 13 1"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000" />
-                  </svg>
-                </button>
-                <button class="info" type="button">
-                  <span class="visually-hidden"
-                    >Посмотреть дополнительную информацию</span
-                  >
-                  <svg
-                    aria-hidden="true"
-                    focusable="false"
-                    width="1"
-                    height="9"
-                    viewBox="0 0 1 9"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#a)" fill="#fff">
-                      <path d="M0 9h1V3H0v6Zm1-9H0v1h1V0Z" />
-                    </g>
-                    <defs>
-                      <clipPath id="a">
-                        <path fill="#fff" d="M0 0h1v9H0z" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </button>
-                <span class="tooltip"
-                  >Укажите количество детей, которые будут с вами, возраст
-                  которых от 6 до 18 лет. Дети до 6 лет размещаются
-                  бесплатно.</span
+                  <path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000" />
+                </svg>
+              </button>
+              <button class="info" type="button">
+                <span class="visually-hidden"
+                  >Посмотреть дополнительную информацию</span
                 >
-                <input
-                  class="number-form-field field"
-                  type="text"
-                  id="auth-numberchildren"
-                  name="auth-numberchildren"
-                  placeholder="1"
-                />
-                <button class="button-plus" type="button">
-                  <svg
-                    aria-hidden="true"
-                    focusable="false"
-                    width="13"
-                    height="13"
-                    viewBox="0 0 13 13"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" />
-                  </svg>
-                </button>
-              </p>
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  width="1"
+                  height="9"
+                  viewBox="0 0 1 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#a)" fill="#fff">
+                    <path d="M0 9h1V3H0v6Zm1-9H0v1h1V0Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h1v9H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <span class="tooltip"
+                >Укажите количество детей, которые будут с вами, возраст которых
+                от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span
+              >
+              <input
+                class="number-form-field field"
+                type="text"
+                id="auth-numberchildren"
+                name="auth-numberchildren"
+                placeholder="1"
+              />
+              <button class="button-plus" type="button">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  width="13"
+                  height="13"
+                  viewBox="0 0 13 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" />
+                </svg>
+              </button>
             </div>
           </form>
           <button class="modal__button" type="submit">Найти</button>

@@ -2210,6 +2210,12 @@ body {
   background-color: #ffffff;
 }
 
+.modal__booking {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
 .modal-auth {
   width: 575px;
 }
@@ -2243,7 +2249,7 @@ body {
 
 .modal-title {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 52px;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 40px;
@@ -2264,12 +2270,10 @@ body {
   font-weight: 400;
 }
 .auth-form-field.field {
-  margin: 40px 0 0 0;
   padding: 17px 19px;
   font: inherit;
   font-weight: 700;
   background-color: #f2f2f2;
-
   outline: none;
   border-radius: 4px;
   border: none;
@@ -2282,7 +2286,7 @@ body {
 }
 
 .auth-form .field {
-  width: 382px;
+  width: 100%;
 }
 
 .auth-form .field:hover:not(:disabled) {
@@ -2334,13 +2338,12 @@ body {
 }
 
 .number-form-field.field {
-  width: 103px;
-  margin: 40px 0 0 0;
+  width: 95px;
   padding: 17px 19px;
   font: inherit;
   font-weight: 700;
   background-color: #f2f2f2;
-
+  margin: 11px 0 0 0;
   outline: none;
   border-radius: 4px;
   border: none;
@@ -2350,13 +2353,10 @@ body {
 }
 
 .number-form-field.field.adults {
-  width: 103px;
-  margin: 40px 0 0 70px;
-  padding: 17px 19px;
   font: inherit;
   font-weight: 700;
   background-color: #f2f2f2;
-
+  margin: 11px 0 0 0;
   outline: none;
   border-radius: 4px;
   border: none;
@@ -2378,15 +2378,16 @@ body {
 .modal__date {
   font-weight: 700;
   line-height: 40px;
-  margin: 45px 0 0 0;
+  min-width: 155px;
   padding: 0;
+  margin: 11px 0 0 0;
 }
 
 .modal__number {
   font-weight: 700;
   line-height: 40px;
-  margin: 45px 0 0 0;
   padding: 0;
+  min-width: 155px;
 }
 
 .modal__booking {
@@ -2394,7 +2395,7 @@ body {
 }
 
 .modal__textred {
-  margin: 0 0 22px 150px;
+  margin: 0 0 0 155px;
   padding: 0 0 0 0;
   line-height: 40px;
   font-size: 16px;
@@ -2404,24 +2405,31 @@ body {
 .modal__text {
   font-size: 16px;
   line-height: 40px;
-  margin: 0 0 22px 150px;
+  margin: 0 0 22px 155px;
 }
 
 .modal__options {
   display: flex;
 }
 
+.modal__options {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
 .modal__numberchildren {
   font-weight: 700;
   line-height: 40px;
-  margin: 45px 0 0 56px;
+  min-width: 54px;
+  margin: 11px 0 0 56px;
 }
 
 .tooltip {
   display: none;
   position: absolute;
-  bottom: 40px;
-  left: 335px;
+  top: 70px;
+  left: 263px;
   border: 1px solid #b9b9b9;
   border-radius: 1px;
   background: #fcfcfc;
@@ -2464,7 +2472,7 @@ body {
 
 .info {
   border: transparent;
-  margin: 52px 10px 0 10px;
+  margin: 11px 18px 0 0;
   padding: 0;
   width: 25px;
   height: 25px;
@@ -2507,10 +2515,9 @@ body {
 }
 
 .calendar {
-  top: 48%;
+  top: 33%;
   position: absolute;
-  right: 90px;
-  bottom: 5px;
+  right: 20px;
   width: 15px;
   height: 15px;
   background-color: none;
@@ -2522,10 +2529,9 @@ body {
 }
 
 .calendararrival {
-  top: 27.5%;
+  top: 33%;
   position: absolute;
-  right: 90px;
-  bottom: 5px;
+  right: 20px;
   width: 15px;
   height: 15px;
   background-color: none;
@@ -2538,8 +2544,8 @@ body {
 
 .button-more-less.more {
   position: absolute;
-  top: 67%;
-  left: 330px;
+  top: 38%;
+  left: 250px;
   padding: 6px;
   width: 25px;
   height: 25px;
@@ -2555,8 +2561,8 @@ body {
 
 .button-more-less.less {
   position: absolute;
-  top: 67%;
-  left: 232px;
+  top: 38%;
+  left: 170px;
   width: 25px;
   height: 25px;
   background-color: transparent;
@@ -2571,8 +2577,8 @@ body {
 
 .button-plus {
   position: absolute;
-  top: 67%;
-  left: 617px;
+  top: 38%;
+  left: 535px;
   padding: 6px;
   width: 25px;
   height: 25px;
@@ -2588,8 +2594,8 @@ body {
 
 .button-minus {
   position: absolute;
-  top: 67%;
-  left: 520px;
+  top: 38%;
+  left: 455px;
   width: 25px;
   height: 25px;
   background-color: transparent;
